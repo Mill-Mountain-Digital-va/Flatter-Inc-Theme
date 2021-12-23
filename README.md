@@ -1,2 +1,4 @@
-# Flatter-Inc-Theme
-used for development and updating the flatter inc website
+# Blank-Theme
+
+
+add images in customize and text
