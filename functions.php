@@ -147,16 +147,6 @@ function millmountain2022_customize_register( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_control(
-		'millmountain2022_shortcode_one',
-		array(
-			'type'    => 'text',
-			'label'   => esc_html__( 'Phone Shortcode is [phone]', 'millmountain' ),
-			'section' => 'Custom Text',
-
-		)
-	);
-
 }
 // End theme customizer
 
