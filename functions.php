@@ -99,9 +99,9 @@ function millmountain2022_widgets_init() {
 
 		register_sidebar(
 			array(
-				'name'          => esc_html__( 'Blog Heading Keyword', 'identitydental' ),
+				'name'          => esc_html__( 'Blog Heading Keyword', 'millmountain' ),
 				'id'            => 'blog-keyword',
-				'description'   => esc_html__( 'Add widgets for Blog Heading Keyword here', 'identitydental' ),
+				'description'   => esc_html__( 'Add widgets for Blog Heading Keyword here', 'millmountain' ),
 				'before_widget' => '<section class="blog-widget">',
 				'after_widget'  => '</section>',
 				'before_title'  => '<h2 class="widget-title">',
@@ -127,7 +127,7 @@ add_action( 'wp_footer', 'wpb_hook_javascript_footer' );
 # TEXT CUSTOMIZE SECTION
 --------------------------------------------------------------*/
 
-function millmountaind2022_customize_register( $wp_customize ) {
+function millmountain2022_customize_register( $wp_customize ) {
 
 	$wp_customize->add_section(
 		'Custom Text',
