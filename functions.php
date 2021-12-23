@@ -94,6 +94,25 @@ register_nav_menus(
 	)
 );
 
+// Setup Widget Areas
+function millmountain2022_widgets_init() {
+	register_sidebar([
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Blog Heading Keyword', 'identitydental' ),
+			'id'            => 'blog-keyword',
+			'description'   => esc_html__( 'Add widgets for Blog Heading Keyword here', 'identitydental' ),
+			'before_widget' => '<section class="blog-widget">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+}
+
+
+add_action( 'widgets_init', 'identitydental2021_widgets_init' );
 /*--------------------------------------------------------------
 # Footer JS Hooks
 --------------------------------------------------------------*/
