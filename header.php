@@ -32,37 +32,6 @@ $header_text_two = get_theme_mod('identitydental_header_text_two', '');
         </header>
 
 
-        <?php
-
-if ( is_home() ) {
-      $image = get_field('header_image', 8);
-      $size = 'header-slide-inside'; 
-    if( $image ) {
-      $background = wp_get_attachment_image( $image, $size );
-    } else {
-      $background = '<img src="https://glossdentaltx.com//wp-content/themes/pham2021/images/slider.jpg">';
-    }
-  } else {
-      if ( is_front_page() ) {
-        $image = get_field('header_image');
-        $size = 'header-slide'; 
-        if( $image ) {
-            $background = wp_get_attachment_image( $image, $size );
-        } else {
-            $background = '<img src="https://glossdentaltx.com//wp-content/themes/pham2021/images/slider.jpg">';
-        }
-      } else {
-        $image = get_field('header_image');
-        $size = 'header-slide-inside';  
-        if( $image ) {
-            $background = wp_get_attachment_image( $image, $size );
-        } else {
-            $background = '<img src="https://glossdentaltx.com//wp-content/themes/pham2021/images/insideslider.jpg">';
-        }
-    }
-  }
-
-  ?>
       
         <div id="content"   class="site-content">
 
