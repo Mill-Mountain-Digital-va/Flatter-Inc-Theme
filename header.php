@@ -6,55 +6,51 @@
 		<title>Document</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<?php get_template_part( 'template-parts/header/font' ); ?>
-		<title>Blank WordPress Theme | Flatter Inc</title>
+		<title>Flatter Inc</title>
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 	<a  href=   "#content"  class=  "skip-link  screen-reader-text" title=""><?php esc_html_e( 'Skip to content', 'millmountain' ); ?></a>
-		<header>
-		<?php
+	<header id="masthead" class="site-header" role="banner">
+	
+	<div class="site-branding">
+		
+		  <?php
+			the_custom_logo();
+			?>
+		
+		
+		
+		<div class="right-header-container">
+			
+		</div>
+			<div class="mobile-menu-icon close">
+			<div class="hamburger-menu">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+		 
+	
+	</div>
+<div class="desktop-mobile open">
 
-		$header_text_one = get_theme_mod( 'millmountain_header_text_one', '' );
-		$header_text_two = get_theme_mod( 'millmountain_header_text_two', '' );
-
+	
+	<nav id="site-navigation" class="desktop-nav main-navigation" role="navigation">
+	  <?php
+		$args = array(
+			'theme_location' => 'main-menu',
+		);
+		wp_nav_menu( $args );
 		?>
+	</nav>
+  </div>
 
-
-			<div class="upper-bar">
-				<div><?php get_template_part( 'template-parts/header/nav' ); ?></div>
-				<div></div>
-				<div></div>
-				<div></div>
-
-				
-
-			<div>
-		</header>
+  </header>
 
 
 	  
 		<div id="content"   class="site-content">
 
-	
 
-<section id="slider" class="">
-
-
-<div class="slider-bg-img pos-abs"><?php echo $background; ?></div>
-
-   <div class= "slider-text-container" >
-
-	<div class="button-one-container pos-rel"><button> <?php echo esc_html( $header_text_one ); ?></button></div>
-
-	<div class="button-two-container pos-rel"><button><?php echo esc_html( $header_text_two ); ?></button></div>
-
-<div>
-</section>
-<section id="under-header">
-
-	<div>
-		
-	</div>
-
-
-</section>

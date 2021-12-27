@@ -1,12 +1,9 @@
 <?php
 
 require_once( 'lib/helpers.php' );
-require_once( 'lib/enqueue-styles.php' );
 require_once( 'lib/sidebars.php' );
-require_once( 'lib/customize.php' );
-// require_once('template-parts/footer/info.php');
-require_once( 'template-parts/header/font.php' );
-require_once( 'template-parts/header/nav.php' );
+
+
 // require_once('template-parts/content/front-page.php');
 
 // Add Theme Support
@@ -30,7 +27,7 @@ function millmountain2022_enqueue_styles() {
 }
   add_action( 'wp_enqueue_scripts', 'millmountain2022_enqueue_styles' );
 
-  // Load in our JS
+  // Load in JS
 function millmountain2022_enqueue_scripts() {
 
 	wp_enqueue_script( 'theme-js', get_stylesheet_directory_uri() . '/assets/js/theme.js', array(), time(), true );
@@ -94,22 +91,7 @@ register_nav_menus(
 	)
 );
 
-// Setup Widget Areas
-function millmountain2022_widgets_init() {
 
-		register_sidebar(
-			array(
-				'name'          => esc_html__( 'Blog Heading Keyword', 'millmountain' ),
-				'id'            => 'blog-keyword',
-				'description'   => esc_html__( 'Add widgets for Blog Heading Keyword here', 'millmountain' ),
-				'before_widget' => '<section class="blog-widget">',
-				'after_widget'  => '</section>',
-				'before_title'  => '<h2 class="widget-title">',
-				'after_title'   => '</h2>',
-			)
-		);
-}
-		add_action( 'widgets_init', 'millmountain2022_widgets_init' );
 /*--------------------------------------------------------------
 # Footer JS Hooks
 --------------------------------------------------------------*/

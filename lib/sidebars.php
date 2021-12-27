@@ -4,8 +4,8 @@
 function millmountain_sidebar_widgets() {
 	register_sidebar(
 		array(
-			'id'            => 'primary-sidebar',
-			'name'          => esc_html__( 'Primary Sidebar', 'millmountain' ),
+			'id'            => 'footer-sidebar',
+			'name'          => esc_html__( 'Footer Sidebar', 'millmountain' ),
 			'description'   => esc_html__( 'description' ),
 			'before_widget' => '<section id="%1$s" class="" >',
 			'after_widget'  => '</section>',
