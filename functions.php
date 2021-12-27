@@ -3,6 +3,8 @@
 require_once( 'lib/helpers.php' );
 require_once( 'lib/sidebars.php' );
 
+include( 'custom-shortcodes.php' );
+
 
 // require_once('template-parts/content/front-page.php');
 
@@ -87,7 +89,14 @@ function process_contact_form() {
   // Register Menu Locations
 register_nav_menus(
 	array(
-		'main-menu' => esc_html__( 'Main Menu', 'millmountain' ),
+		'main-menu'         => esc_html__( 'Main Menu', 'millmountain' ),
+		'footer-one-menu'   => esc_html__( 'Footer One Menu', 'millmountain' ),
+		'footer-two-menu'   => esc_html__( 'Footer Two Menu', 'millmountain' ),
+		'footer-three-menu' => esc_html__( 'Footer Three Menu', 'millmountain' ),
+		'footer-four-menu'  => esc_html__( 'Footer Four Menu', 'millmountain' ),
+		'footer-five-menu'  => esc_html__( 'Footer Five Menu', 'millmountain' ),
+		'footer-six-menu'   => esc_html__( 'Footer Six Menu', 'millmountain' ),
+		'footer-seven-menu' => esc_html__( 'Footer Seven Menu', 'millmountain' ),
 	)
 );
 
@@ -122,10 +131,20 @@ function millmountain2022_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting(
-		'millmountain2022_shortcode_one',
+		'millmountain2022_shortcode_footer_one',
 		array(
 			'default'           => '',
 			'sanitize_callback' => 'sanitize_text_field',
+		)
+	);
+
+	$wp_customize->add_control(
+		'millmountain2022_shortcode_footer_one',
+		array(
+			'type'    => 'text',
+			'label'   => esc_html__( 'Footer One Shortcode is [keyword-footer-one]', 'millmountain' ),
+			'section' => 'Custom Text',
+
 		)
 	);
 
