@@ -1,7 +1,8 @@
 <?php
 
-require_once( 'lib/helpers.php' );
+// require_once( 'lib/helpers.php' );
 require_once( 'lib/sidebars.php' );
+require_once( 'lib/enqueue-styles.php' );
 
 include( 'custom-shortcodes.php' );
 
@@ -22,12 +23,7 @@ add_theme_support( 'starter-content' );
 add_theme_support( 'wp-mail' );
 
 
-function millmountain2022_enqueue_styles() {
 
-	wp_enqueue_style( 'main-css', get_stylesheet_directory_uri() . '/style.css', array( '' ), time(), 'all' );
-
-}
-  add_action( 'wp_enqueue_scripts', 'millmountain2022_enqueue_styles' );
 
   // Load in JS
 function millmountain2022_enqueue_scripts() {
@@ -38,8 +34,6 @@ function millmountain2022_enqueue_scripts() {
   add_action( 'wp_enqueue_scripts', 'millmountain2022_enqueue_scripts' );
 
   //Contact Form
-
-
 
 function process_contact_form() {
 

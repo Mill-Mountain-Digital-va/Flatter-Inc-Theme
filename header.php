@@ -3,27 +3,24 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Document</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<?php get_template_part( 'template-parts/header/font' ); ?>
-		<title>Flatter Inc</title>
+		
+	
+		
+	
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
 	<a  href=   "#content"  class=  "skip-link  screen-reader-text" title=""><?php esc_html_e( 'Skip to content', 'millmountain' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
-	
+			
 	<div class="site-branding">
-		
+	
 		  <?php
 			the_custom_logo();
 			?>
 		
 		
 		
-		<div class="right-header-container">
-			
-		</div>
 			<div class="mobile-menu-icon close">
 			<div class="hamburger-menu">
 				<div class="line"></div>
@@ -48,6 +45,7 @@
   </div>
 
   </header>
+
 
 
 	  
