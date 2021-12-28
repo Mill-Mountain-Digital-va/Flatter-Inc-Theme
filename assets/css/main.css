@@ -325,11 +325,6 @@ p {
 
 /* test  */
 
-.entry-header {
-  background-color: rgba(255, 0, 0, 0);
-  margin-bottom: 5rem;
-}
-
 header {
   display: flex;
   flex-flow: column;
@@ -338,12 +333,6 @@ header {
   justify-content: center;
   align-items: center;
   color: var(--text-color) !important;
-}
-#masthead {
-  backface-visibility: hidden;
-
-  z-index: 1000000 !important;
-  text-align: center;
 }
 
 .custom-logo-link img {
@@ -361,7 +350,7 @@ header {
 }
 
 .open {
-  display: none;
+  display: auto;
 }
 
 /*--------------------------------------------------------------
@@ -370,6 +359,9 @@ header {
 
 /* Ipad to Mobile */
 @media screen and (max-width: 1250px) {
+  .open {
+    display: none;
+  }
   /* Header */
 
   #masthead {
