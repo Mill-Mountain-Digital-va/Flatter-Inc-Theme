@@ -20,14 +20,7 @@
 			?>
 		
 		
-		
-			<div class="mobile-menu-icon close">
-			<div class="hamburger-menu">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
-		</div>
+	
 		 
 	
 	</div>
@@ -44,6 +37,16 @@
 	</nav>
   </div>
 
+		
+		
+  <div class="mobile-menu-icon close">
+			<div class="hamburger-menu">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+		</div>
+
   </header>
 
 
@@ -51,4 +54,4 @@
 	  
 		<div id="content"   class="site-content">
 
-<p>test</p>
+
