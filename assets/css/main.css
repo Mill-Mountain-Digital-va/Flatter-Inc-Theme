@@ -256,9 +256,16 @@ p {
 }
 
 .desktop-mobile {
-  width: 100%;
-
   height: auto;
+}
+.menu ul {
+  display: flex;
+  grid-gap: 2rem;
+  width: auto;
+}
+ul.menu {
+  display: flex;
+  grid-gap: 2rem;
 }
 
 #menu-main-menu {
@@ -327,10 +334,10 @@ p {
 
 header {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   width: 100%;
   height: auto;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: var(--text-color) !important;
 }
