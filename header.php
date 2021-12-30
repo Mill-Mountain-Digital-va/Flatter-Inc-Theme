@@ -18,7 +18,9 @@
 		  <?php
 			the_custom_logo();
 			?>
-		
+			<a href="flatterinc.com">
+			<img class="custom-logo" alt="two roads logo" title="two roads logo" height="115" width='300' src="https://tworoadsleadership.com/wp-content/uploads/2021/05/TwoRoadsDark_Division-1024x273.png">
+</a>
 		
 	
 		 
