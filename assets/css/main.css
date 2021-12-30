@@ -89,6 +89,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  border: 1px solid red;
+  /* redline to show spaciing delete in production */
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -137,7 +139,6 @@ html {
 
 /* redline for positioning  */
 * {
-  border: 1px solid red;
 }
 
 /*--------------------------------------------------------------
@@ -240,6 +241,27 @@ p {
 /*--------------------------------------------------------------
 # Nav
 --------------------------------------------------------------*/
+/* Sub Nav */
+
+ul.children {
+  display: none !important;
+  position: absolute !important;
+  top: 10% !important;
+  left: 0% !important;
+}
+
+li.page_item_has_children:hover .children {
+  display: block !important;
+  position: relative !important;
+  width: 10rem;
+  height: auto;
+}
+
+li.page_item_has_children:hover .children a {
+  position: absolute !important;
+  width: 100%;
+  height: auto;
+}
 
 /* Header */
 

@@ -13,7 +13,8 @@ require_once( 'lib/theme-support.php' );
 include( 'custom-shortcodes.php' );
 
 
-// require_once('template-parts/content/front-page.php');
+// require_once('template-parts/content/front-page.php');]
+
 
 
 
