@@ -382,12 +382,13 @@ header {
   flex-flow: row;
   grid-gap: 6rem;
   height: auto;
-  width: 90%;
+  width: 100%;
   justify-content: space-between;
-
   align-items: center;
   color: var(--text-color);
   position: fixed;
+  z-index: 99;
+  background-color: white;
 }
 
 .custom-logo-link img {
