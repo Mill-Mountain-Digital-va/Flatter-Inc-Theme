@@ -242,7 +242,16 @@ p {
 --------------------------------------------------------------*/
 
 /* Header */
+
+.custom-logo {
+  width: 100%;
+  height: auto;
+  max-width: 25rem;
+}
+
 .site-branding {
+  justify-content: space-around;
+  align-items: center;
   display: flex;
   gap: 2rem;
   padding: 2rem 0;
@@ -348,12 +357,12 @@ ul.menu {
 header {
   display: flex;
   flex-flow: row;
-
+  grid-gap: 6rem;
   height: auto;
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: 0 2rem;
   align-items: center;
-  color: var(--text-color) !important;
+  color: var(--text-color);
 }
 
 .custom-logo-link img {
@@ -394,7 +403,7 @@ header {
     height: 900px;
     padding: 10rem 0;
     left: 0%;
-    top: 0%;
+    top: 10%;
     background-color: white;
     z-index: 100;
   }
