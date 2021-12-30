@@ -287,9 +287,8 @@ p {
 }
 ul.menu {
   display: flex;
-  grid-gap: 2rem;
-  flex-flow: column nowrap;
   font-size: var(--p-font-size);
+  grid-gap: 2rem;
 }
 
 #menu-main-menu {
@@ -392,6 +391,9 @@ header {
 /* Ipad to Mobile */
 @media screen and (max-width: 1250px) {
   .menu ul {
+    flex-flow: column nowrap;
+  }
+  ul.menu {
     flex-flow: column nowrap;
   }
 
