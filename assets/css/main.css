@@ -182,12 +182,10 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-/* COLOR PALLETTE */
-/*--------------------------------------------------------------
+:root {
+  /*--------------------------------------------------------------
 # Colors Pallette
 --------------------------------------------------------------*/
-
-:root {
   --black: black;
   --white: white;
   --whitesmoke: whitesmoke;
@@ -202,6 +200,15 @@ html {
   --box-nine: indigo;
   --box-ten: dodgerblue;
   --p-font: #4f4f4f;
+
+  /*--------------------------------------------------------------
+# Font Size
+--------------------------------------------------------------*/
+  --menu-font-size: 1.9rem;
+  --p-font-size: 1.5rem;
+  --hone-font-size: 2.5rem;
+  --htwo-font-size: 2.2rem;
+  --hthree-font-size: 2rem;
 }
 
 /*--------------------------------------------------------------
@@ -235,6 +242,11 @@ p {
 --------------------------------------------------------------*/
 
 /* Header */
+.site-branding {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
 
 .custom-logo-link img {
   max-width: 35rem;
@@ -261,6 +273,7 @@ p {
 .menu ul {
   display: flex;
   grid-gap: 2rem;
+  font-size: var(--menu-font-size);
   width: auto;
 }
 ul.menu {
@@ -335,9 +348,10 @@ ul.menu {
 header {
   display: flex;
   flex-flow: row;
-  width: 100%;
+
   height: auto;
   justify-content: space-between;
+  padding: 0 5rem;
   align-items: center;
   color: var(--text-color) !important;
 }
@@ -366,10 +380,13 @@ header {
 
 /* Ipad to Mobile */
 @media screen and (max-width: 1250px) {
+  .menu ul {
+    flex-flow: column nowrap;
+  }
+
   .desktop-mobile {
     position: absolute;
     display: flex;
-
     justify-content: center;
     align-items: center;
     text-align: center;
