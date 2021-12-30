@@ -288,6 +288,8 @@ p {
 ul.menu {
   display: flex;
   grid-gap: 2rem;
+  flex-flow: column nowrap;
+  font-size: var(--p-font-size);
 }
 
 #menu-main-menu {
