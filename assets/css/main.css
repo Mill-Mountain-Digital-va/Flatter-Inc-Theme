@@ -137,8 +137,8 @@ html {
   font-size: 62.5%; /* 10px = 1 rem*/
 }
 
-/* redline for positioning  */
 * {
+  overflow: hidden;
 }
 
 /*--------------------------------------------------------------
@@ -220,6 +220,10 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 h1,
@@ -382,10 +386,12 @@ header {
   flex-flow: row;
   grid-gap: 6rem;
   height: auto;
+  width: 90%;
   justify-content: space-between;
-  padding: 0 2rem;
+
   align-items: center;
   color: var(--text-color);
+  position: fixed;
 }
 
 .custom-logo-link img {
@@ -393,6 +399,17 @@ header {
   height: auto;
   max-width: 46rem;
 }
+
+/*--------------------------------------------------------------
+# Content Container
+--------------------------------------------------------------*/
+#content {
+  margin-top: 20rem;
+}
+
+/*--------------------------------------------------------------
+# Slider
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Helpers
