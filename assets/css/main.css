@@ -212,11 +212,23 @@ html {
 # General Styles
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Animations
+--------------------------------------------------------------*/
+@keyframes slidedown {
+  from {
+    display: flex;
+    top: -100%;
+  }
+  to {
+    top: 30%;
+  }
+}
+
 html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
-
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -386,6 +398,7 @@ header {
   justify-content: space-between;
   align-items: center;
   color: var(--text-color);
+  border-bottom: 1px solid #80808054;
   position: fixed;
   z-index: 99;
   background-color: white;
@@ -435,15 +448,16 @@ header {
 
   .desktop-mobile {
     position: absolute;
-    display: flex;
+    animation: slidedown 1s;
     justify-content: center;
     align-items: center;
     text-align: center;
+    top: 30%;
     width: 100%;
     height: 900px;
     padding: 10rem 0;
     left: 0%;
-    top: 10%;
+
     background-color: white;
     z-index: 100;
   }
