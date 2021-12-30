@@ -8,4 +8,11 @@ hambutton.addEventListener('click', (event) => {
 })
 
 
+document.addEventListener("mousewheel", function (event) {
+    if (event.wheelDelta >= 0) {
+        console.log("up")
+    } else {
+        console.log("down")
+    }
+})
 
