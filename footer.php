@@ -3,7 +3,12 @@
  
  </div> <!-- Close Content -->
  <footer id="footer" role="contentinfo">
- <?php dynamic_sidebar( 'footer-sidebar' ); ?>
+
+<?php
+ esc_html_e( 'powered by mill mountain digital', 'millmountian' )
+
+?>
+
    
 </footer>
 
