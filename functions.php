@@ -8,7 +8,7 @@ require_once( 'lib/customizer.php' );
 require_once( 'lib/nav-menus.php' );
 require_once( 'lib/javascript.php' );
 require_once( 'lib/theme-support.php' );
-require_once( 'footer.php' );
+
 
 
 // include( 'custom-shortcodes.php' );
