@@ -295,7 +295,7 @@ li {
   padding: 1rem;
   position: relative;
   text-decoration: none;
-  transition-duration: 0.5s;
+  /* transition-duration: 0.5s; */
 }
 
 li a {
@@ -306,6 +306,7 @@ li:hover {
   background: blue;
   color: white;
   cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 ul li ul {
@@ -527,7 +528,6 @@ header {
     height: 900px;
     padding: 10rem 0;
     left: 0%;
-
     background-color: white;
     z-index: 100;
   }
