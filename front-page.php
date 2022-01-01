@@ -1,26 +1,29 @@
 <?php get_header(); ?>
 
-<div id="primary-front" class="content-area extended">
+<div id="primary" class="content-area">
 
-<main id="main" class="site-main" role="main">
+  <main id="main" class="site-main" role="main">
 
-<?php
-if ( have_posts() ) :
-	while ( have_posts() ) :
-		the_post();
-		?>
+	<?php
+	if ( have_posts() ) :
+		while ( have_posts() ) :
+			the_post();
+			?>
 
-			<?php get_template_part( 'template-parts/content', 'front' ); ?>
+			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
 
-	<?php endwhile; else : ?>
+			<?php endwhile; else : ?>
 
-		<?php get_template_part( 'template-parts/content', 'none' ); ?>
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 	<?php endif; ?>
 
-</main>
+	<p>Template: front.php</p>
+
+  </main>
 
 </div>
+
 
 
 <?php get_footer(); ?>
