@@ -42,54 +42,46 @@ hambutton.addEventListener('click', (e) => {
 
 document.addEventListener("mousewheel", function (e) {
     if (e.wheelDelta >= 0) {
-        console.log("up");
+        return null
     } else {
-        console.log("down");
+        return null
     }
 })
 
 
-if (mobilemenu.focus()) {
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === 'Return') {
-            desktop.classList.toggle('open');
-            hambutton.classList.toggle('spin');
-        }
-    });
-}
 
 // key event listener
-document.addEventListener("keydown", event => {
-
-
-    if (mobilemenu.focus()) {
+mobilemenu.addEventListener("keydown", event => {
 
 
 
-        switch (event.key) {
 
-            case "Down": // IE/Edge specific value
-            case "ArrowDown":
-                desktop.classList.toggle('open');
-                hambutton.classList.toggle('spin');
-                // Do something for "down arrow" key press.
-                break;
-            case "Up": // IE/Edge specific value
-            case "ArrowUp":
-                // Do something for "up arrow" key press.
-                desktop.classList.toggle('open');
-                hambutton.classList.toggle('spin');
-                break;
-            case "Enter": // For "enter" or "return" key press.
-                desktop.classList.toggle('open');
-                hambutton.classList.toggle('spin');
-                break;
 
-            default:
-                return; // Quit when this doesn't handle the key event.
 
-        }
+    switch (event.key) {
+
+        case "Down": // IE/Edge specific value
+        case "ArrowDown":
+            desktop.classList.toggle('open');
+            hambutton.classList.toggle('spin');
+            // Do something for "down arrow" key press.
+            break;
+        case "Up": // IE/Edge specific value
+        case "ArrowUp":
+            // Do something for "up arrow" key press.
+            desktop.classList.toggle('open');
+            hambutton.classList.toggle('spin');
+            break;
+        case "Enter": // For "enter" or "return" key press.
+            desktop.classList.toggle('open');
+            hambutton.classList.toggle('spin');
+            break;
+
+        default:
+            return; // Quit when this doesn't handle the key event.
+
     }
+
 
 
 
