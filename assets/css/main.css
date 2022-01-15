@@ -89,7 +89,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid red;
+  border-radius: 0.6rem;
+  /* border: 1px solid red; */
   /* redline to show spaciing delete in production */
 }
 /* HTML5 display-role reset for older browsers */
@@ -276,7 +277,8 @@ a {
 }
 
 nav {
-  font-family: monospace;
+  font-family: "Poppins", sans-serif;
+  line-height: 2;
 }
 
 ul {
@@ -295,11 +297,26 @@ li {
   padding: 1rem;
   position: relative;
   text-decoration: none;
-  /* transition-duration: 0.5s; */
+  transition-duration: 0.5s;
 }
 
-li a {
+.children a {
+  color: var(--white) !important;
+}
+.children li:hover {
+  color: var(--black) !important;
+  background-color: var(--white) !important;
+}
+
+.children li:hover a {
+  color: var(--black) !important;
+}
+
+.menu ul li.page_item a {
   color: black;
+}
+.menu ul li.page_item:hover a {
+  color: white;
 }
 
 li:hover {
@@ -307,6 +324,17 @@ li:hover {
   color: white;
   cursor: pointer;
   transition-duration: 0.5s;
+}
+
+.menu-toggle {
+  background: blue;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  color: white;
 }
 
 ul li ul {
@@ -401,7 +429,6 @@ ul li ul li {
   align-items: center;
   position: relative;
   transition: all 0.5s;
-
   z-index: 1000 !important;
 }
 
@@ -462,7 +489,7 @@ header {
 # Content Container
 --------------------------------------------------------------*/
 #content {
-  margin-top: 20rem;
+  margin-top: 17rem;
 }
 
 /*--------------------------------------------------------------
@@ -497,11 +524,10 @@ header {
 
   /* SUBNAV */
 
-  li {
-    color: black;
-    background-color: white;
+  .children li {
+    background-color: blue;
     display: block;
-    float: center !important;
+    margin-left: 5rem;
     padding: 1rem;
     position: relative;
     text-decoration: none;
@@ -513,7 +539,7 @@ header {
     flex-flow: column nowrap;
   }
   .children {
-    z-index: 1000000;
+    z-index: 1000;
   }
   /* end subnav */
 
@@ -641,7 +667,14 @@ header {
 }
 
 @media screen and (max-width: 550px) {
+  #content {
+    margin-top: 15.5rem;
+  }
   .custom-logo-link img {
     max-width: 20rem;
+  }
+
+  .children li {
+    margin-left: 0;
   }
 }
