@@ -10,15 +10,17 @@
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-	<a  href=   "#content"  class=  "skip-link  screen-reader-text" title=""><?php esc_html_e( 'Skip to content', 'millmountain' ); ?></a>
+	<a tabindex="1" href=   "#content"  class=  "skip-link  screen-reader-text" title=""><?php esc_html_e( 'Skip to content', 'millmountain' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
 			
 	<div class="site-branding">
 	
 		  <?php
+
 			the_custom_logo();
 			?>
-			<a href="flatterinc.com">
+			
+			<a  href="flatterinc.com" tabindex="-1">
 			<img class="custom-logo" alt="two roads logo" title="two roads logo" height="115" width='300' src="https://tworoadsleadership.com/wp-content/uploads/2021/05/TwoRoadsDark_Division-1024x273.png">
 </a>
 		
@@ -41,7 +43,7 @@
 
 		
 		
-  <div class="mobile-menu-icon close">
+  <div class="mobile-menu-icon close" tabindex="3">
 			<div class="hamburger-menu">
 				<div class="line"></div>
 				<div class="line"></div>
