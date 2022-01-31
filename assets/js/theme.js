@@ -12,10 +12,10 @@ children.forEach(item => {
     item.setAttribute("tabindex", "0");
 })
 withChild.forEach(item => {
-    let div = document.createElement('a');
-    div.innerHTML = "&#8744;";//caret
-    div.classList.add('test');
-    item.appendChild(div);
+    let caret = document.createElement('i');
+    caret.innerHTML = "&#9662;";//caret
+    caret.classList.add('caret');
+    item.appendChild(caret);
 
 
 })
