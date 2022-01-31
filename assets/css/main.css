@@ -220,7 +220,7 @@ html {
   from {
     display: flex;
     top: -350%;
-    transition: 0.5s;
+    transition: all 0.5s;
     z-index: 0;
   }
   to {
@@ -243,6 +243,7 @@ html {
 html,
 body {
   height: 100%;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-flow: column nowrap;
@@ -301,15 +302,19 @@ li {
 }
 
 .children a {
-  color: var(--white) !important;
+  color: var(--black) !important;
 }
 .children li:hover {
+  /* child items when hovered*/
   color: var(--black) !important;
   background-color: var(--white) !important;
+  transition: all 0.5s;
 }
 
 .children li:hover a {
+  /* child links when hovered*/
   color: var(--black) !important;
+  transition: all 0.5s;
 }
 
 .menu ul li.page_item a {
@@ -319,11 +324,27 @@ li {
   color: white;
 }
 
+ul.children {
+  display: none !important  ;
+}
+.page_item:hover ul.children,
+li.page_item a:focus ul.children,
+.page_item:active ul.children,
+.page_item:target ul.children,
+.page_item:checked ul.children {
+  transition: 1s;
+  display: flex !important;
+  flex-flow: column;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: absolute;
+}
 li:hover {
   background: blue;
   color: white;
   cursor: pointer;
   transition-duration: 0.5s;
+  transition: all 0.5s;
 }
 
 .menu-toggle {
@@ -340,14 +361,13 @@ li:hover {
 ul li ul {
   color: black;
   background-color: white;
-  visibility: hidden;
-  opacity: 0;
+
   min-width: 5rem;
-  position: absolute;
+  position: relative;
   transition: all 0.5s ease;
   margin-top: 1rem;
   left: 0;
-  display: none;
+  display: none !;
 }
 
 ul li:hover > ul,
@@ -356,6 +376,8 @@ ul li ul:hover {
   opacity: 1;
   display: block;
   color: white;
+  transition: all 0.5s;
+  position: absolute;
 }
 
 ul li ul li {
@@ -514,6 +536,15 @@ header {
 
 /* Ipad to Mobile */
 @media screen and (max-width: 1250px) {
+  ul li ul {
+    display: flex;
+    display: relative !important  ;
+  }
+
+  ul li:hover > ul,
+  ul li ul:hover {
+    position: relative;
+  }
   .menu ul {
     flex-flow: column nowrap;
   }
@@ -540,6 +571,23 @@ header {
   }
   .children {
     z-index: 1000;
+  }
+
+  .page_item:focus ul.children,
+  .page_item:hover ul.children,
+  .page_item:active ul.children,
+  .page_item a:focus ul.children,
+  .page_item a:hover ul.children,
+  .page_item a:active ul.children,
+  .page_item a:target ul.children {
+    position: initial;
+    transition: 1s;
+    display: flex !important;
+    flex-flow: column;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    transition: 0.5s;
   }
   /* end subnav */
 
@@ -593,7 +641,7 @@ header {
   }
   .nav-burger .line {
     background-color: black;
-    height: 3px;
+    height: 1.5px;
     width: 100%;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -637,7 +685,7 @@ header {
 
   .hamburger-menu .line {
     background-color: #000;
-    height: 3px;
+    height: 1.5px;
     width: 100%;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
