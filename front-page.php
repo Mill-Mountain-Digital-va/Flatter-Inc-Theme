@@ -9,8 +9,10 @@
 	<div class='hero-slider-text-container'>
 	  <h1>Excellence is our Baseline</h1>
 	  <p>lorem ipsum</p>
-	  <button alt="contact us" title="contact us" onclick="window.location.href='/contact-us'">button one</button> <button alt="about us" title="about us" onclick="window.location.href='/about-us'">button two</button>
+	  <div class= 'hero-button-container'> 
+	  <button alt="contact us" title="contact us" onclick="window.location.href='/contact-us'" class="first-button">button one</button> <button alt="about us" title="about us" onclick="window.location.href='/about-us'" class="second-button">button two</button>
 </div>
+	</div>
 		  <div class='hero-slider-image-container'>
 			  <img src="#" alt="hero image" title="hero image">
 </div>
