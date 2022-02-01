@@ -559,6 +559,15 @@ header {
   background-color: black;
   color: white;
 }
+.hero-button-container .first-button:hover {
+  color: black;
+  background-color: white;
+}
+
+.hero-button-container .second-button:hover {
+  color: white;
+  background-color: black;
+}
 
 /*--------------------------------------------------------------
 # Section One
