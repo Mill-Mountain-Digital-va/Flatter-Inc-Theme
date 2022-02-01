@@ -24,6 +24,19 @@
 
 	</div>
 </div>
+<div id="section-two">
+	<h2></h2>
+	<h3></h3>
+	<p></p>
+	<div class="event-slider">
+		<div class="cards">
+			
+		</div>
+
+	<button></button>
+	</div>
+	
+</div>
 <?php
 if ( have_posts() ) :
 	while ( have_posts() ) :

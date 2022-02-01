@@ -278,7 +278,7 @@ a {
 
 nav {
   font-family: "Poppins", sans-serif;
-  line-height: 2;
+  line-height: 1;
 }
 
 ul {
@@ -301,26 +301,19 @@ li {
 }
 
 .children a {
-  color: var(--black) !important;
+  color: var(--black);
 }
 .children li:hover {
   /* child items when hovered*/
-  color: var(--black) !important;
-  background-color: var(--white) !important;
+  color: var(--white);
+  background-color: blue;
   transition: all 0.5s;
 }
 
 .children li:hover a {
   /* child links when hovered*/
-  color: var(--black) !important;
+  color: var(--white);
   transition: all 0.5s;
-}
-
-.menu ul li.page_item a {
-  color: black;
-}
-.menu ul li.page_item:hover a {
-  color: white;
 }
 
 ul.children {
@@ -355,6 +348,10 @@ li:hover {
   opacity: 1;
   display: block;
   color: white;
+}
+.menu ul li ul li:hover {
+  color: white;
+  background-color: blue;
 }
 
 ul li ul {
