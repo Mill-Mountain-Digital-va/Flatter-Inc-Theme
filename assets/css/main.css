@@ -396,6 +396,7 @@ ul li ul li {
   align-items: center;
   display: flex;
   gap: 2rem;
+  margin-left: 2rem;
   padding: 2rem 0;
 }
 
@@ -557,6 +558,22 @@ header {
 .hero-button-container .first-button {
   background-color: black;
   color: white;
+}
+
+/*--------------------------------------------------------------
+# Section One
+--------------------------------------------------------------*/
+#section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  min-height: 20rem;
+}
+
+#section-one a {
+  color: blue;
+  text-decoration: none;
 }
 
 /*--------------------------------------------------------------

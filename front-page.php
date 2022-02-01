@@ -17,7 +17,13 @@
 			  <img src="#" alt="hero image" title="hero image">
 </div>
   </div>
+<div id="section-one">
+	<h2>This is a <a href="/" class="link">test</a></h2>
+	<div class="event-slider">
+		<img src="#" alt=""> <img src="#" alt=""> <img src="#" alt=""> <img src="#" alt="">
 
+	</div>
+</div>
 <?php
 if ( have_posts() ) :
 	while ( have_posts() ) :
