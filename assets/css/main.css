@@ -519,9 +519,44 @@ header {
 
 .slider {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
   gap: 10rem;
+  padding: 10rem;
+}
+.hero-slider-text-container {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 50rem;
+  gap: 2rem;
+}
+.hero-slider-text-container p {
+  font-size: 4rem;
+}
+.hero-slider-text-container h1 {
+  font-size: 7rem;
+}
+.hero-slider-text-container p {
+  font-size: 4rem;
+}
+
+.hero-button-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+  gap: 3rem;
+}
+
+.hero-button-container button {
+  width: 23rem;
+  height: 7rem;
+  background-color: white;
+  border: 1px solid black;
+}
+.hero-button-container .first-button {
+  background-color: black;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -722,6 +757,9 @@ header {
   /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
+  .slider {
+    padding: 4rem 2rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -734,5 +772,12 @@ header {
 
   .children li {
     margin-left: 0;
+  }
+  .hero-button-container {
+    justify-content: center;
+  }
+
+  .hero-button-container button {
+    width: 100%;
   }
 }
