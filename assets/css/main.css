@@ -544,6 +544,7 @@ header {
   max-width: 50rem;
   gap: 2rem;
 }
+
 .hero-slider-text-container p {
   font-size: 4rem;
 }
@@ -601,6 +602,10 @@ header {
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+
+.red-underline {
+  border-bottom: 1rem var(--red-one) solid;
+}
 
 .close {
   display: none;
