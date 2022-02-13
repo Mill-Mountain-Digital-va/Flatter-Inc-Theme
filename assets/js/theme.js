@@ -16,12 +16,13 @@ withChild.forEach(item => {
     caret.innerHTML = "&#9662;";//caret
     caret.classList.add('caret');
     item.appendChild(caret);
-
+    item.addEventListener('click', (e) => {
+        item.classList.toggle('red');
+    })
 
 
 
 })
-
 
 
 
