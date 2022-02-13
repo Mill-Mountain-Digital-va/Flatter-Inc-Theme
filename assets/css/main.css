@@ -313,7 +313,6 @@ li {
   padding: 1rem;
   position: relative;
   text-decoration: none;
-  transition-duration: 0.5s;
 }
 
 .children a {
@@ -323,13 +322,11 @@ li {
   /* child items when hovered*/
   color: var(--white);
   background-color: var(--blue-one);
-  transition: all 0.5s;
 }
 
 .children li:hover a {
   /* child links when hovered*/
   color: var(--white);
-  transition: all 0.3s;
 }
 
 ul.children {
@@ -340,7 +337,6 @@ li.page_item a:focus ul.children,
 .page_item:active ul.children,
 .page_item:target ul.children,
 .page_item:checked ul.children {
-  transition: ease-in;
   display: flex !important;
   flex-flow: column;
   visibility: visible !important;
@@ -351,8 +347,6 @@ li:hover {
   background: var(--blue-one);
   color: white;
   cursor: pointer;
-  transition-duration: 0.5s;
-  transition: all 0.5s;
 }
 
 .menu-toggle {
@@ -633,7 +627,6 @@ header {
     padding: 1rem;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
   }
   .children a {
     color: var(--white);
