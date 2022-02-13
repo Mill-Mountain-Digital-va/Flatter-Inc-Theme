@@ -89,7 +89,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   /* border: 1px solid red; */
   /* redline to show spaciing delete in production */
 }
@@ -176,11 +176,9 @@ html {
 
 /*  DEFINE FONT */
 
-* {
-  font-family: "Poppins", sans-serif;
-}
-
 :root {
+  --font-one: "Cormorant Garamond", serif;
+  --font-two: "Oxygen", sans-serif;
   /*--------------------------------------------------------------
 # Colors Pallette
 --------------------------------------------------------------*/
@@ -197,11 +195,12 @@ html {
   --box-eight: hotpink;
   --box-nine: indigo;
   --box-ten: dodgerblue;
-  --p-font: #4f4f4f;
+  --p-font: #343434;
 
   /*--------------------------------------------------------------
 # Font Size
 --------------------------------------------------------------*/
+
   --menu-font-size: 1.9rem;
   --p-font-size: 1.5rem;
   --hone-font-size: 2.5rem;
@@ -244,7 +243,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -257,13 +256,17 @@ h4,
 h5 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  font-family: "Rubik", sans-serif;
 }
 
 p {
   line-height: 1.4;
   font-size: 1.6rem;
   color: var(--p-font);
+  font-family: var(--font-one);
+}
+
+* {
+  font-family: var(--font-two);
 }
 
 /*--------------------------------------------------------------
@@ -274,11 +277,11 @@ p {
 a {
   text-decoration: none;
   font-size: var(--p-font-size);
+  font-family: var(--font-two);
 }
 
 nav {
-  font-family: "Poppins", sans-serif;
-  line-height: 2;
+  line-height: 1;
 }
 
 ul {
@@ -301,26 +304,19 @@ li {
 }
 
 .children a {
-  color: var(--black) !important;
+  color: var(--black);
 }
 .children li:hover {
   /* child items when hovered*/
-  color: var(--black) !important;
-  background-color: var(--white) !important;
+  color: var(--white);
+  background-color: blue;
   transition: all 0.5s;
 }
 
 .children li:hover a {
   /* child links when hovered*/
-  color: var(--black) !important;
+  color: var(--white);
   transition: all 0.5s;
-}
-
-.menu ul li.page_item a {
-  color: black;
-}
-.menu ul li.page_item:hover a {
-  color: white;
 }
 
 ul.children {
@@ -355,6 +351,10 @@ li:hover {
   opacity: 1;
   display: block;
   color: white;
+}
+.menu ul li ul li:hover {
+  color: white;
+  background-color: blue;
 }
 
 ul li ul {
@@ -588,6 +588,11 @@ header {
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+
+button {
+  border-radius: 0.4rem;
+  font-family: var(--font-two);
+}
 
 .close {
   display: none;
