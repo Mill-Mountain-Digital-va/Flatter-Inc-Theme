@@ -21,11 +21,16 @@ withChild.forEach(item => {
 })
 
 
+
+
 hambutton.addEventListener('click', (e) => {
     desktop.classList.toggle('open');
     hambutton.classList.toggle('spin');
 })
+withChild.addEventListener("click", (e) => {
+    children.classList.toggle('submenu');
 
+})
 
 
 
