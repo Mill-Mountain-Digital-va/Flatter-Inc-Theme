@@ -643,6 +643,15 @@ header {
   .children {
     z-index: 1000;
   }
+  .page_item:focus .children li,
+  .page_item:hover .children li,
+  .page_item:active .children li,
+  .page_item a:focus .children li,
+  .page_item a:hover .children li,
+  .page_item a:active .children li,
+  .page_item a:target .children li {
+    background-color: var(--red-one);
+  }
 
   .page_item:focus ul.children,
   .page_item:hover ul.children,
@@ -655,7 +664,6 @@ header {
     flex-flow: column;
     align-items: center;
     display: flex;
-    background-color: var(--red-one);
   }
 
   .submenu {
