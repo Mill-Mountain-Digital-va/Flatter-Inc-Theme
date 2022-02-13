@@ -644,7 +644,6 @@ header {
     z-index: 1000;
   }
 
-  .page_item:hover .children li,
   .page_item a:focus .children li,
   .page_item a:hover .children li {
     background-color: var(--red-one);
