@@ -17,14 +17,15 @@ withChild.forEach(item => {
     caret.classList.add('caret');
     item.appendChild(caret);
 
-    item.addEventListener('click', (e) => {
-        children.foreach(i => {
-            i.addEventListener('click', (event) => {
-                i.toggle.classList('red');
-            })
-        })
-    })
 
+
+
+})
+
+children.forEach(item => {
+    addEventListener('click', (e) => {
+        item.classList.toggle('red');
+    })
 
 })
 
