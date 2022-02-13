@@ -595,7 +595,7 @@ header {
   border-bottom: 1rem var(--red-one) solid;
 }
 .red {
-  background-color: var(--red-one);
+  background-color: var(--red-one) !important;
 }
 
 .close {
