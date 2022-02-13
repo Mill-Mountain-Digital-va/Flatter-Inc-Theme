@@ -278,6 +278,7 @@ a {
   text-decoration: none;
   font-size: var(--p-font-size);
   font-family: var(--font-two);
+  color: inherit;
 }
 
 nav {
