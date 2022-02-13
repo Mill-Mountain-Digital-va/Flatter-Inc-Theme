@@ -655,11 +655,10 @@ header {
     flex-flow: column;
     align-items: center;
     display: flex;
-    height: 0rem;
   }
 
   .submenu {
-    animation: submenu 1s;
+    animation: submenu 1s linear;
   }
   /* end subnav */
 
