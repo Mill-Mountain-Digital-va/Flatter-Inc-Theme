@@ -234,13 +234,22 @@ html {
 }
 @keyframes submenu {
   from {
+    position: initial;
     opacity: 0;
-    height: 0;
-    display: flex;
+
+    display: flex !important;
+    flex-flow: column;
+    visibility: visible !important;
+    opacity: 0 !important;
   }
   to {
-    height: 20vh;
-    opacity: 1;
+    position: initial;
+    transition: 1s;
+
+    display: flex !important;
+    flex-flow: column;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 }
 
@@ -281,6 +290,7 @@ button {
 
 * {
   font-family: var(--font-two);
+  outline: 0;
 }
 
 /*--------------------------------------------------------------
@@ -626,15 +636,10 @@ header {
     display: relative !important  ;
   }
 
-  ul li:hover > ul,
-  ul li ul:hover {
-    position: relative;
-  }
   .menu ul {
     flex-flow: column nowrap;
   }
   ul.menu {
-    animation: submenu 1s;
     flex-flow: column nowrap;
   }
 
@@ -668,20 +673,13 @@ header {
   .page_item a:hover ul.children,
   .page_item a:active ul.children,
   .page_item a:target ul.children {
-    position: initial;
-    transition: 1s;
-    display: flex !important;
-    flex-flow: column;
-    visibility: visible !important;
-    opacity: 1 !important;
-
-    transition: 0.5s;
+    animation: submenu 1s infinite;
   }
   /* end subnav */
 
   .desktop-mobile {
     position: absolute;
-    animation: slidedown 1s;
+    animation: slidedown 0.75s;
     justify-content: center;
     align-items: center;
     text-align: center;
