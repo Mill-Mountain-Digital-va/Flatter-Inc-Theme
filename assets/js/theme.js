@@ -22,12 +22,7 @@ withChild.forEach(item => {
 
 })
 
-children.forEach(item => {
-    addEventListener('click', (e) => {
-        item.classList.toggle('red');
-    })
 
-})
 
 
 
@@ -37,10 +32,7 @@ hambutton.addEventListener('click', (e) => {
     desktop.classList.toggle('open');
     hambutton.classList.toggle('spin');
 })
-withChild.addEventListener("click", (e) => {
-    children.classList.toggle('submenu');
 
-})
 
 
 
