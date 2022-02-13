@@ -594,6 +594,9 @@ header {
 .red-underline {
   border-bottom: 1rem var(--red-one) solid;
 }
+.red {
+  background-color: var(--red-one);
+}
 
 .close {
   display: none;

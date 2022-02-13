@@ -20,7 +20,7 @@ withChild.forEach(item => {
     item.addEventListener('click', (e) => {
         children.foreach(i => {
             i.addEventListener('click', (event) => {
-                i.setAttribute('style', 'background-color: var(--red-one);')
+                i.toggle.classList('red');
             })
         })
     })
