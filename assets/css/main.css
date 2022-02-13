@@ -335,7 +335,7 @@ li {
 ul.children {
   display: none !important  ;
 }
-/* .page_item:hover ul.children,
+.page_item:hover ul.children,
 li.page_item a:focus ul.children,
 .page_item:active ul.children,
 .page_item:target ul.children,
@@ -346,7 +346,7 @@ li.page_item a:focus ul.children,
   visibility: visible !important;
   opacity: 1 !important;
   position: absolute;
-} */
+}
 li:hover {
   background: var(--blue-one);
   color: white;
@@ -644,7 +644,7 @@ header {
     z-index: 1000;
   }
 
-  /* .page_item:focus ul.children,
+  .page_item:focus ul.children,
   .page_item:hover ul.children,
   .page_item:active ul.children,
   .page_item a:focus ul.children,
@@ -655,14 +655,11 @@ header {
     flex-flow: column;
     align-items: center;
     display: flex;
-  } */
+    height: 0rem;
+  }
 
   .submenu {
     animation: submenu 1s;
-    position: initial;
-    flex-flow: column;
-    align-items: center;
-    display: flex;
   }
   /* end subnav */
 
