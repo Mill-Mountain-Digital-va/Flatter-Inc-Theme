@@ -195,6 +195,8 @@ html {
   --box-nine: indigo;
   --box-ten: dodgerblue;
   --p-font: #343434;
+  --red-one: #bf0a30;
+  --blue-one: #002868;
 
   /*--------------------------------------------------------------
 # Fonts
@@ -322,7 +324,7 @@ li {
 .children li:hover {
   /* child items when hovered*/
   color: var(--white);
-  background-color: blue;
+  background-color: var(--blue-one);
   transition: all 0.5s;
 }
 
@@ -348,7 +350,7 @@ li.page_item a:focus ul.children,
   position: absolute;
 }
 li:hover {
-  background: blue;
+  background: var(--blue-one);
   color: white;
   cursor: pointer;
   transition-duration: 0.5s;
@@ -367,7 +369,7 @@ li:hover {
 }
 .menu ul li ul li:hover {
   color: white;
-  background-color: blue;
+  background-color: var(--red-one);
 }
 
 ul li ul {
@@ -567,17 +569,17 @@ header {
   border: 1px solid black;
 }
 .hero-button-container .first-button {
-  background-color: black;
+  background-color: var(--blue-one);
   color: white;
 }
 .hero-button-container .first-button:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: var(--red-one);
 }
 
 .hero-button-container .second-button:hover {
   color: white;
-  background-color: black;
+  background-color: var(--red-one);
 }
 
 /*--------------------------------------------------------------
@@ -634,13 +636,16 @@ header {
   /* SUBNAV */
 
   .children li {
-    background-color: blue;
+    background-color: var(--blue-one);
     display: block;
     margin-left: 5rem;
     padding: 1rem;
     position: relative;
     text-decoration: none;
     transition-duration: 0.5s;
+  }
+  .children a {
+    color: var(--white);
   }
 
   .menu ul {
