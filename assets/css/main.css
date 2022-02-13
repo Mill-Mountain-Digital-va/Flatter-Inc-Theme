@@ -177,11 +177,10 @@ html {
 /*  DEFINE FONT */
 
 :root {
-  --font-one: "Cormorant Garamond", serif;
-  --font-two: "Oxygen", sans-serif;
   /*--------------------------------------------------------------
 # Colors Pallette
 --------------------------------------------------------------*/
+
   --black: black;
   --white: white;
   --whitesmoke: whitesmoke;
@@ -198,6 +197,14 @@ html {
   --p-font: #343434;
 
   /*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+
+  --font-one: "Cormorant Garamond", serif;
+  --font-two: "Oxygen", sans-serif;
+  /* NEVER HAVE MORE THAN 2 FONTS */
+
+  /*--------------------------------------------------------------
 # Font Size
 --------------------------------------------------------------*/
 
@@ -207,10 +214,6 @@ html {
   --htwo-font-size: 2.2rem;
   --hthree-font-size: 2rem;
 }
-
-/*--------------------------------------------------------------
-# General Styles
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Animations
@@ -239,6 +242,10 @@ html {
   }
 }
 
+/*--------------------------------------------------------------
+# General Styles
+--------------------------------------------------------------*/
+
 html,
 body {
   height: 100%;
@@ -263,6 +270,11 @@ p {
   font-size: 1.6rem;
   color: var(--p-font);
   font-family: var(--font-one);
+}
+
+button {
+  border-radius: 0.4rem;
+  font-family: var(--font-two);
 }
 
 * {
@@ -485,8 +497,6 @@ ul li ul li {
   transform: rotateZ(-45deg) translate(0.6rem, -0.1rem);
 }
 
-/* test  */
-
 header {
   display: flex;
   flex-flow: row;
@@ -589,11 +599,6 @@ header {
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
-
-button {
-  border-radius: 0.4rem;
-  font-family: var(--font-two);
-}
 
 .close {
   display: none;
