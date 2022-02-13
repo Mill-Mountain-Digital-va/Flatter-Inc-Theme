@@ -645,11 +645,8 @@ header {
   }
   .page_item:focus .children li,
   .page_item:hover .children li,
-  .page_item:active .children li,
   .page_item a:focus .children li,
-  .page_item a:hover .children li,
-  .page_item a:active .children li,
-  .page_item a:target .children li {
+  .page_item a:hover .children li {
     background-color: var(--red-one);
   }
 
