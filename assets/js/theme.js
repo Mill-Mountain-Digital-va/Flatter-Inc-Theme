@@ -19,7 +19,9 @@ withChild.forEach(item => {
     item.appendChild(caret);
     item.addEventListener('click', (e) => {
 
-        e.target.classList.toggle('blink');
+        target.classList.toggle('blink');
+
+
     })
 
 
@@ -31,8 +33,12 @@ withChild.forEach(item => {
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
         let newItem = e.target.closest('.page_item');
-        e.target.classList.toggle('blink');
+        target = e.target;
+        if (target.classList != "blink") {
+            e.target.classList.toggle('blink');
+        }
         newItem.classList.toggle('red');
+
 
     })
 })
