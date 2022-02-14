@@ -19,18 +19,25 @@ withChild.forEach(item => {
     item.addEventListener('click', (e) => {
         item.classList.toggle('red');
     })
+    item.addEventListener("click", (e) => {
+
+        e.target.classList.toggle('blink');
+
+    })
 
 
 
 })
+
+
 
 pageItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-        item.toggle.classList('blink');
+    item.addEventListener("click", (e) => {
+
+        e.target.classList.toggle('blink');
+
     })
 })
-
-
 
 
 
