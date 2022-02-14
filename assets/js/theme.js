@@ -5,7 +5,7 @@ let hambutton = document.querySelector('.hamburger-menu');
 const withChild = document.querySelectorAll('.page_item_has_children');
 const children = document.querySelectorAll('.children');
 let mobilemenu = document.querySelector('.mobile-menu-icon');
-
+const pageItems = document.querySelectorAll('.page_item');
 
 
 children.forEach(item => {
@@ -23,6 +23,14 @@ withChild.forEach(item => {
 
 
 })
+
+pageItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+        item.toggle.classList('blink');
+    })
+})
+
+
 
 
 
