@@ -30,9 +30,9 @@ withChild.forEach(item => {
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
-
+        let newItem = e.target.closest('.page_item');
         e.target.classList.toggle('blink');
-        item.classList.toggle('red');
+        newItem.classList.toggle('red');
 
     })
 })
