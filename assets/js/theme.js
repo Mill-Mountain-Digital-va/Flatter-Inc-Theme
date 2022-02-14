@@ -11,33 +11,33 @@ const pageItems = document.querySelectorAll('.page_item');
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
 })
+
 withChild.forEach(item => {
     let caret = document.createElement('i');
     caret.innerHTML = "&#9662;";//caret
     caret.classList.add('caret');
     item.appendChild(caret);
     item.addEventListener('click', (e) => {
-        item.classList.toggle('red');
-    })
-    item.addEventListener("click", (e) => {
 
         e.target.classList.toggle('blink');
-
     })
+
 
 
 
 })
-
 
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
 
         e.target.classList.toggle('blink');
+        item.classList.toggle('red');
 
     })
 })
+
+
 
 
 
