@@ -232,11 +232,14 @@ html {
     z-index: 100;
   }
 }
-@keyframes blink {
-  from {
+@keyframes newblink {
+  0% {
     opacity: 1;
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 0;
   }
 }
@@ -586,7 +589,7 @@ header {
 --------------------------------------------------------------*/
 
 .blink {
-  animation: blink 1s;
+  animation: newblink 0.2s;
 }
 
 .red-underline {
