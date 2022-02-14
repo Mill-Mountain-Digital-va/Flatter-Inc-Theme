@@ -232,12 +232,12 @@ html {
     z-index: 100;
   }
 }
-@keyframes submenu {
+@keyframes blink {
   from {
-    height: 0;
+    opacity: 1;
   }
   to {
-    height: auto;
+    opacity: 0;
   }
 }
 
@@ -584,6 +584,10 @@ header {
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+
+.blink {
+  animation: blink 1s;
+}
 
 .red-underline {
   border-bottom: 1rem var(--red-one) solid;
