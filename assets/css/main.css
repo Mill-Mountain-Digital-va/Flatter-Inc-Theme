@@ -416,7 +416,7 @@ ul li ul li {
 /* Header */
 
 .custom-logo {
-  width: 100%;
+  width: 70%;
   height: auto;
   max-width: 25rem;
 }
@@ -427,7 +427,7 @@ ul li ul li {
   display: flex;
   gap: 2rem;
   margin-left: 2rem;
-  padding: 2rem 0;
+  padding: .2rem 0;
 }
 
 .custom-logo-link img {
@@ -530,7 +530,7 @@ header {
 }
 
 .custom-logo-link img {
-  width: 100%;
+  width: 70%;
   height: auto;
   max-width: 46rem;
 }
