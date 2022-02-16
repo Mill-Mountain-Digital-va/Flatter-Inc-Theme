@@ -631,7 +631,7 @@ header {
   animation: newblink 0.2s;
 }
 
-.red-underline {
+.underline {
   border-bottom: 1rem inherit solid;
 }
 .red {

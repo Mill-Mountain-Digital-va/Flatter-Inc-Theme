@@ -43,8 +43,9 @@ function millmountain2022_customize_register( $wp_customize ) {
 	
 	
 	));
-
-		// Custom Colors
+/*--------------------------------------------------------------
+# Color Customization 
+--------------------------------------------------------------*/
 	
 	$wp_customize->add_section( 'Custom Color', array(
 		'title' => esc_html__('Custom Color' ),
@@ -69,6 +70,11 @@ function millmountain2022_customize_register( $wp_customize ) {
 // End theme customizer
 
 
+
+/*--------------------------------------------------------------
+# COLOR CSS
+--------------------------------------------------------------*/
+
 add_action( 'customize_register', 'millmountain2022_customize_register' );
 
 function theme_get_customizer_css() {
@@ -78,7 +84,7 @@ function theme_get_customizer_css() {
 	$underline_color = get_theme_mod( 'underline_color', '' );
 	if ( ! empty( $underline_color ) ) {
 	  ?>
-	  .red-underline{
+	  .underline{
 		  border-bottom: 1rem <?php echo sanitize_hex_color( $underline_color ); ?> solid !important;
 	  }
 	  <?php
@@ -88,6 +94,13 @@ function theme_get_customizer_css() {
     return $css;
 }
 
+/*--------------------------------------------------------------
+# End Custom CSS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Enque Custom Styles 
+--------------------------------------------------------------*/
 function theme_enqueue_styles() {
 	wp_enqueue_style( 'theme-styles', get_stylesheet_uri() ); // This is where you enqueue your theme's main stylesheet
 	$custom_css = theme_get_customizer_css();
@@ -96,29 +109,5 @@ function theme_enqueue_styles() {
   
   add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
-  function millmountain2022_sanitize_link_one($input){
-    $allowed = array('link' => array(
-        'href' => array(),
-        'title' => array(),
-        'rel' => array(),
-    ));
-    return wp_kses($input, $allowed);
-}
 
-function millmountain2022_sanitize_link_two($input){
-$allowed = array('iframe' => array(
-    'src' => array(),
-   
-));
-}
-function millmountain2022_sanitize_h_one($input){
-$allowed_hone = array('h1' => array(
-));
-}
 
-function millmountain2022_sanitize_h_two($input){
-$allowed_htwo = array('h2' => array(
-  'h1' => array(),
-  
-));
-}

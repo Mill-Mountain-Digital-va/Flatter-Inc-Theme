@@ -41,3 +41,34 @@ function millmountain_readmore_link() {
 }
 
 
+/*--------------------------------------------------------------
+# Sanitization Customization Helpers
+--------------------------------------------------------------*/
+
+function millmountain2022_sanitize_link_one($input){
+    $allowed = array('link' => array(
+        'href' => array(),
+        'title' => array(),
+        'rel' => array(),
+    ));
+    return wp_kses($input, $allowed);
+}
+
+function millmountain2022_sanitize_link_two($input){
+$allowed = array('iframe' => array(
+    'src' => array(),
+   
+));
+}
+function millmountain2022_sanitize_h_one($input){
+$allowed_hone = array('h1' => array(
+));
+}
+
+function millmountain2022_sanitize_h_two($input){
+$allowed_htwo = array('h2' => array(
+  'h1' => array(),
+  
+));
+}
+
