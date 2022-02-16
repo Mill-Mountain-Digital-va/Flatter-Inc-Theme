@@ -7,7 +7,7 @@
 <div class='slider'>
 
 	<div class='hero-slider-text-container'>
-	  <h1>Excellence is our <span class="red-underline">Baseline<span></h1>
+	  <h1> <?php echo do_shortcode( '[hero-heading]' );?>  <span class="red-underline">Baseline<span></h1>
 	  <p>lorem ipsum</p>
 	  <div class= 'hero-button-container'> 
 	  <button alt="contact us" title="contact us" onclick="window.location.href='/contact-us'" class="first-button">button one</button> <button alt="about us" title="about us" onclick="window.location.href='/about-us'" class="second-button">button two</button>
