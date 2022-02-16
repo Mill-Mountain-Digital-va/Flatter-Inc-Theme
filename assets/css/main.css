@@ -425,7 +425,6 @@ ul li ul li {
   justify-content: space-around;
   align-items: center;
   display: flex;
-  gap: 2rem;
   margin-left: 2rem;
   padding: .2rem 0;
 }
