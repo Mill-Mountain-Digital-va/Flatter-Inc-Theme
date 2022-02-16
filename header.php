@@ -10,7 +10,7 @@
 	
 	</head>
 	<body <?php body_class(); ?>>
-	<a tabindex="1" href=   "#content"  class=  "skip-link  screen-reader-text" title=""><?php esc_html_e( 'Skip to content', 'millmountain' ); ?></a>
+	<a tabindex="-1" href=   "#content"  class=  "skip-link  screen-reader-text" title=""><?php esc_html_e( 'Skip to content', 'millmountain' ); ?></a>
 	<header id="masthead" class="site-header" role="banner">
 			
 	<div class="site-branding">
