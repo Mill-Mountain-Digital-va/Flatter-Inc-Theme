@@ -631,8 +631,8 @@ header {
   animation: newblink 0.2s;
 }
 
-.red-underline {
-  border-bottom: 1rem var(--red-one) solid;
+.underline {
+  border-bottom: 1rem inherit solid;
 }
 .red {
   background-color: var(--red-one) !important;
