@@ -33,7 +33,7 @@
 			
 		</div>
 
-	<button></button>
+	
 	</div>
 	
 </div>
