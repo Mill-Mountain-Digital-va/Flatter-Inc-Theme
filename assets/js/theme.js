@@ -6,7 +6,13 @@ const withChild = document.querySelectorAll('.page_item_has_children');
 const children = document.querySelectorAll('.children');
 let mobilemenu = document.querySelector('.mobile-menu-icon');
 const pageItems = document.querySelectorAll('.page_item');
+const buttons = document.querySelectorAll('button');
 
+buttons.forEach(item => {
+    item.addEventListener('click', (e) => {
+        item.classList.add('button-animation');
+    })
+})
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
