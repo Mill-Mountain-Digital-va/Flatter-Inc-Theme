@@ -211,7 +211,7 @@ html {
 --------------------------------------------------------------*/
 
   --menu-font-size: 1.9rem;
-  --p-font-size: 1.5rem;
+  --p-font-size: 1.3rem;
   --hone-font-size: 2.5rem;
   --htwo-font-size: 2.2rem;
   --hthree-font-size: 2rem;
@@ -301,13 +301,19 @@ p {
   line-height: 1.4;
   font-size: 1.6rem;
   color: var(--p-font);
-  font-family: var(--font-one);
+  font-family: .5rem;
 }
 
 button {
   border-radius: 0.4rem;
   font-family: var(--font-two);
+  font-size: var(--p-font-size);
 }
+
+ input[type="button"] {
+  font-size: var(--p-font-size);
+}
+
 
 * {
   font-family: var(--font-two);
@@ -648,7 +654,7 @@ header {
 @media screen and (max-width: 1250px) {
   ul li ul {
     display: flex;
-    display: relative !important  ;
+
   }
 
   .menu ul {

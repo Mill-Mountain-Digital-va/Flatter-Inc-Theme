@@ -11,8 +11,8 @@ require_once( 'lib/theme-support.php' );
 require_once( 'lib/fonts.php' );
 
 
+include( 'custom-shortcodes.php' );
 
-// include( 'custom-shortcodes.php' );
 
 
 // require_once( 'template-parts/content-front.php' );
