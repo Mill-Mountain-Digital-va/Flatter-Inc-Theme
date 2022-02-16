@@ -260,12 +260,18 @@ html {
 @keyframes inout {
   0% {
     transform: scale(.95);
+    opacity: .9;
+    
   }
   50% {
-    transform: scale(1);
+    opacity: 1;
+    transform: scale(1.04);
+   
   }
   100% {
-    transform: scale(1.05);
+    transform: scale(1);
+    opacity: 1;
+    
   }
 }
 /*--------------------------------------------------------------
@@ -534,7 +540,7 @@ header {
 --------------------------------------------------------------*/
 #content {
   margin-top: 17rem;
-  animation: transition 0.3s;
+  animation: transition 0.6s;
 }
 
 /*--------------------------------------------------------------
@@ -614,7 +620,7 @@ header {
 --------------------------------------------------------------*/
 
 .button-animation{
-  animation: inout 1s;
+  animation: inout 1s ease-in;
 }
 .blink {
   animation: newblink 0.2s;
