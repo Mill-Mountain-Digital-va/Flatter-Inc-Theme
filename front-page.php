@@ -25,18 +25,47 @@
 	</div>
 </div>
 <div id="section-two">
-	<h2></h2>
-	<h3></h3>
-	<p></p>
+	
 	<div class="event-slider">
-		<div class="cards">
-			
-		</div>
 
+	
+
+		<button class='leftArrow'>&lt;</button>
+		<div id='slider'>
+		<div class="tabs">
+				<div class="content">
+					<div><img src="Koala.jpg" alt="Koala"></div>
+					<h3>important person</h3>
+					<h4>does important thing</h4>
+					<p>about the super important stuff</p>
+</div>
+</div>
+		
+			<div class="tabs">
+				<div class="content">
+					<div><img src="Koala.jpg" alt="Koala"></div>
+					<h3>important person</h3>
+					<h4>does important thing</h4>
+					<p>about the super important stuff</p>
+</div>
+</div>
+		
+			<div class="tabs">
+			<div class="content">
+					<div><img src="Koala.jpg" alt="Koala"></div>
+					<h3>important person</h3>
+					<h4>does important thing</h4>
+					<p>about the super important stuff</p>
+</div>
 	
 	</div>
 	
 </div>
+<button class='rightArrow'>&gt;</button>
+
+</div>
+</div>
+<!-- end event slider -->
 <?php
 if ( have_posts() ) :
 	while ( have_posts() ) :
