@@ -22,7 +22,13 @@
 </div>
   </div>
 <div id="section-one">
-	<h2>This is a <a href="/" class="link">test</a></h2>
+<div class="image-slider">
+	<div class="image"><img src="" title="" alt=""></div>
+	<div class="image"><img src="" title="" alt=""></div>
+	<div class="image"><img src="" title="" alt=""></div>
+	<div class="image"><img src="" title="" alt=""></div>
+	
+</div>
 
 </div>
 <div id="section-two">
