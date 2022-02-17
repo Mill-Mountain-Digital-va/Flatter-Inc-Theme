@@ -640,6 +640,10 @@ header {
   align-items: center;
 }
 
+#wp-block-search__input-1{
+  height:3rem;  
+}
+
 
 
 /*--------------------------------------------------------------
