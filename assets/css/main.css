@@ -604,6 +604,22 @@ header {
   background-color: var(--red-one);
 }
 
+
+
+
+
+.event-slider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#slider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Section One
 --------------------------------------------------------------*/

@@ -31,6 +31,8 @@
 	
 
 		<button class='leftArrow'>&lt;</button>
+
+		
 		<div id='slider'>
 		<div class="tabs">
 				<div class="content">
@@ -61,8 +63,9 @@
 	</div>
 	
 </div>
-<button class='rightArrow'>&gt;</button>
 
+<button class='rightArrow'>&gt;</button>
+</div>
 </div>
 </div>
 <!-- end event slider -->
