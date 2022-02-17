@@ -52,7 +52,22 @@ pageItems.forEach(item => {
 
 
 
+var scrollContainer = function(container, direction) {
+    var amount = direction * container.clientWidth;
+    container.scrollLeft+=amount; 
+}
 
+var sliderContainer = document.getElementById('slider');
+
+var leftArrow = document.querySelector(".leftArrow");
+leftArrow.addEventListener('click', function(){
+    scrollContainer(sliderContainer, -1);
+});
+
+var rightArrow = document.querySelector(".rightArrow");
+rightArrow.addEventListener('click', function(){
+    scrollContainer(sliderContainer, 1);
+});
 
 
 

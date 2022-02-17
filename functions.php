@@ -13,6 +13,7 @@ require_once( 'lib/fonts.php' );
 
 include( 'custom-shortcodes.php' );
 
+// Add block patterns
 
 
 // require_once( 'template-parts/content-front.php' );
