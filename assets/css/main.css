@@ -673,7 +673,7 @@ header {
 }
 .tab-container{
   display:flex;
-  overflow:hidden;
+  overflow:scroll;
   justify-content: space-evenly;
   gap:3rem;
 }
@@ -684,6 +684,12 @@ header {
   border: .3rem solid var(--blue-one);
 
   box-shadow: -.1px .1px 1px var(--blue-one);
+}
+
+.tab-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
 }
 /*--------------------------------------------------------------
 # Helpers
