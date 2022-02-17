@@ -559,7 +559,8 @@ header {
 .slider {
   display: flex;
   flex-flow: row-reverse wrap-reverse;
-  justify-content: space-around;
+  justify-content: center;
+  gap:14rem;
   align-items: center;
   padding: 10rem 0rem;
 }
