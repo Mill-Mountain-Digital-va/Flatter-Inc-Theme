@@ -8,6 +8,8 @@ let mobilemenu = document.querySelector('.mobile-menu-icon');
 const pageItems = document.querySelectorAll('.page_item');
 const buttons = document.querySelectorAll('button');
 
+
+
 buttons.forEach(item => {
     item.addEventListener('click', (e) => {
         item.classList.add('button-animation');
@@ -36,6 +38,8 @@ withChild.forEach(item => {
 })
 
 
+
+
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
         let newItem = e.target.closest('.page_item');
@@ -52,23 +56,6 @@ pageItems.forEach(item => {
 
 
 
-var scrollContainer = function(container, direction) {
-    var amount = direction * container.clientWidth;
-    container.scrollLeft+=amount; 
-}
-
-var sliderContainer = document.getElementById('slider');
-
-var leftArrow = document.querySelector(".leftArrow");
-leftArrow.addEventListener('click', function(){
-    scrollContainer(sliderContainer, -1);
-});
-
-var rightArrow = document.querySelector(".rightArrow");
-rightArrow.addEventListener('click', function(){
-    scrollContainer(sliderContainer, 1);
-});
-
 
 
 hambutton.addEventListener('click', (e) => {
@@ -76,6 +63,28 @@ hambutton.addEventListener('click', (e) => {
     hambutton.classList.toggle('spin');
 })
 
+
+let scrollContainer = function(container, direction) {
+    var amount = direction * container.clientWidth;
+    container.scrollLeft+=amount; 
+}
+
+
+let leftArrow = document.querySelectorAll(".leftArrow");
+let rightArrow = document.querySelectorAll(".rightArrow");
+console.log(sliderContainer);
+leftArrow[0].addEventListener('click', (e) =>{
+    console.log('left');
+    let sliderContainer = e.target.closest.querySelector('.tab-container');
+    scrollContainer(sliderContainer, -1);
+});
+
+
+rightArrow[0].addEventListener('click', (e)=> {
+    console.log('right');
+    let sliderContainer = e.target.closest.querySelector('.tab-container');
+    scrollContainer(sliderContainer, 1);
+});
 
 
 
