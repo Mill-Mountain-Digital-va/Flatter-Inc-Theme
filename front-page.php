@@ -30,12 +30,13 @@
 
 	
 
-		<button class='leftArrow'>&lt;</button>
 
 		
 		<div id='slider'>
+
+		<button class='leftArrow'>&lt;</button>
 		<div class="tabs">
-				<div class="content">
+				<div class="tab-content">
 					<div><img src="Koala.jpg" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
@@ -44,16 +45,47 @@
 </div>
 		
 			<div class="tabs">
-				<div class="content">
+				<div class="tab-content">
 					<div><img src="Koala.jpg" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
 </div>
 </div>
-		
+<div class="tabs">
+				<div class="tab-content">
+					<div><img src="Koala.jpg" alt="Koala"></div>
+					<h3>important person</h3>
+					<h4>does important thing</h4>
+					<p>about the super important stuff</p>
+</div>
+</div>
+<div class="tabs">
+				<div class="tab-content">
+					<div><img src="Koala.jpg" alt="Koala"></div>
+					<h3>important person</h3>
+					<h4>does important thing</h4>
+					<p>about the super important stuff</p>
+</div>
+</div>
+<div class="tabs">
+				<div class="tab-content">
+					<div><img src="Koala.jpg" alt="Koala"></div>
+					<h3>important person</h3>
+					<h4>does important thing</h4>
+					<p>about the super important stuff</p>
+</div>
+</div>
+<div class="tabs">
+				<div class="tab-content">
+					<div><img src="Koala.jpg" alt="Koala"></div>
+					<h3>important person</h3>
+					<h4>does important thing</h4>
+					<p>about the super important stuff</p>
+</div>
+</div>	
 			<div class="tabs">
-			<div class="content">
+			<div class="tab-content">
 					<div><img src="Koala.jpg" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
@@ -61,10 +93,10 @@
 </div>
 	
 	</div>
-	
+	<button class='rightArrow'>&gt;</button>
 </div>
 
-<button class='rightArrow'>&gt;</button>
+
 </div>
 </div>
 </div>
