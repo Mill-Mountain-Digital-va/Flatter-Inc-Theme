@@ -46,7 +46,7 @@
 		<button class='leftArrow'>&lt;</button>
 		<div class="tab-container">
 
-		<div class="tabs">
+		<div class="tabs tab-one">
 				<div class="tab-content">
 					<div><img src="Koala.jpg" alt="Koala"></div>
 					<h3>important person</h3>
