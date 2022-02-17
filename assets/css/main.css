@@ -558,9 +558,9 @@ header {
 
 .slider {
   display: flex;
-  flex-flow: row wrap-reverse;
+  flex-flow: row-reverse wrap-reverse;
   justify-content: space-around;
-
+  align-items: center;
   padding: 10rem 0rem;
 }
 .hero-slider-text-container {
@@ -578,6 +578,10 @@ header {
 }
 .hero-slider-text-container p {
   font-size: 4rem;
+}
+
+.hero-slider-image-container {
+  height: 50%;
 }
 
 .hero-button-container {
