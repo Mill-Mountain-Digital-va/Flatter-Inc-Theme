@@ -657,15 +657,33 @@ header {
   color: var(--p-font);
   text-decoration: none;
 }
-
+.image-slider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+}
 
 /*--------------------------------------------------------------
-# Section One
+# Section Two
 --------------------------------------------------------------*/
-
+#section-two{
+  padding:4rem 10rem;
+}
 .tab-container{
   display:flex;
   overflow:hidden;
+  justify-content: space-evenly;
+  gap:3rem;
+}
+
+.tabs {
+  padding: 2rem;
+  border-radius: .2rem;
+  border: .3rem solid var(--blue-one);
+
+  box-shadow: -.1px .1px 1px var(--blue-one);
 }
 /*--------------------------------------------------------------
 # Helpers
@@ -813,6 +831,9 @@ header {
     transition: all 0.3s;
   }
 
+  header{
+    gap:18rem;
+  }
   .desktop-mobile {
     width: 100%;
     height: auto;
@@ -888,6 +909,9 @@ header {
 }
 
 @media screen and (max-width: 550px) {
+  header{
+    gap:0rem;
+  }
   #content {
     margin-top: 15.5rem;
   }
