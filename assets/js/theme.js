@@ -7,8 +7,12 @@ const children = document.querySelectorAll('.children');
 let mobilemenu = document.querySelector('.mobile-menu-icon');
 const pageItems = document.querySelectorAll('.page_item');
 const buttons = document.querySelectorAll('button');
+let searchbar = document.querySelector("#wp-block-search__input-1");
 
 
+
+//Search bar text
+searchbar.setAttribute('placeholder', 'Find it here');
 
 buttons.forEach(item => {
     item.addEventListener('click', (e) => {

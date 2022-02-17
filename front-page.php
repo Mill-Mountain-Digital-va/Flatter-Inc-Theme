@@ -12,7 +12,7 @@
 	  <div class= 'hero-button-container'> 
 	  <button alt="contact us" title="contact us" onclick="window.location.href='/contact-us'" class="first-button">button one</button> <button alt="about us" title="about us" onclick="window.location.href='/about-us'" class="second-button">button two</button>
 </div>
-<h3 class="search-text">Find it here:</h3>
+
 <?php dynamic_sidebar( 'search-header-sidebar' ); ?>
 	</div>
 
