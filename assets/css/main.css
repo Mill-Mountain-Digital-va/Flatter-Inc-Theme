@@ -926,7 +926,8 @@ header {
   display:none;
 }
   .slider {
-    padding: 4rem 2rem;
+    gap:0rem;
+    padding: 6rem 2rem;
   }
 }
 
@@ -935,7 +936,7 @@ header {
     gap:0rem;
   }
   #content {
-    margin-top: 15.5rem;
+    margin-top: 0rem;
   }
   .custom-logo-link img {
     max-width: 20rem;
