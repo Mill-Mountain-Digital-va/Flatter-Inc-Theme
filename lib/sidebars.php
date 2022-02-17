@@ -3,9 +3,10 @@
 
 function millmountain_sidebar_widgets() {
 	register_sidebar(
+
 		array(
-			'id'            => 'footer-sidebar',
-			'name'          => esc_html__( 'Footer Sidebar', 'millmountain' ),
+			'id'            => 'search-header-sidebar',
+			'name'          => esc_html__( 'Search Header Sidebar', 'millmountain' ),
 			'description'   => esc_html__( 'description' ),
 			'before_widget' => '<section id="%1$s" class="" >',
 			'after_widget'  => '</section>',
@@ -13,6 +14,7 @@ function millmountain_sidebar_widgets() {
 			'after_title'   => '</h5>',
 		)
 	);
+
 }
 
 

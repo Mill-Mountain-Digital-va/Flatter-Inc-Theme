@@ -212,6 +212,7 @@ html {
 
   --menu-font-size: 1.9rem;
   --p-font-size: 1.3rem;
+  --button-font-size: 1.5rem;
   --hone-font-size: 2.5rem;
   --htwo-font-size: 2.2rem;
   --hthree-font-size: 2rem;
@@ -294,7 +295,7 @@ h3,
 h4,
 h5 {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+
 }
 
 p {
@@ -307,7 +308,7 @@ p {
 button {
   border-radius: 0.4rem;
   font-family: var(--font-two);
-  font-size: var(--p-font-size);
+  font-size: var(--button-font-size);
 }
 
  input[type="button"] {
@@ -522,10 +523,10 @@ ul li ul li {
 header {
   display: flex;
   flex-flow: row;
-  grid-gap: 6rem;
+
   height: auto;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   color: var(--text-color);
   border-bottom: 1px solid #80808054;
@@ -549,6 +550,8 @@ header {
   width:100%;
 }
 
+
+
 /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
@@ -557,8 +560,8 @@ header {
   display: flex;
   flex-flow: row wrap-reverse;
   justify-content: space-around;
-  gap: 10rem;
-  padding: 10rem;
+
+  padding: 10rem 0rem;
 }
 .hero-slider-text-container {
   display: flex;
@@ -589,29 +592,50 @@ header {
   width: 23rem;
   height: 7rem;
   background-color: white;
-  border: 1px solid black;
+
+}
+
+.hero-button-container button.first-button {
+  width: 23rem;
+  height: 7rem;
+  
+
+}
+
+.hero-button-container button.second-button {
+  width: 23rem;
+  height: 7rem;
+  background-color: white;
+  border: .4rem solid var(--blue-one);
+  color: var(--blue-one);
+
 }
 .hero-button-container .first-button {
   background-color: var(--blue-one);
+  border-color: var(--blue-one);
   color: white;
 }
 .hero-button-container .first-button:hover {
   color: white;
-  background-color: var(--red-one);
+  background-color: #00419e;
+ 
 }
 
 .hero-button-container .second-button:hover {
-  color: white;
-  background-color: var(--red-one);
+  background-color: #f3f8ff;
+  box-shadow: inset 0 0 0 1px #00419e;
+ color: #00419e
 }
 
-
+.wp-block-search__label{
+  display:none;
+}
 
 
 
 #slider {
   display: flex;
-  overflow: hidden;
+
   justify-content: space-evenly;
   align-items: center;
 }
@@ -634,6 +658,15 @@ header {
   text-decoration: none;
 }
 
+
+/*--------------------------------------------------------------
+# Section One
+--------------------------------------------------------------*/
+
+.tab-container{
+  display:flex;
+  overflow:hidden;
+}
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
@@ -871,5 +904,19 @@ header {
 
   .hero-button-container button {
     width: 100%;
+  }
+
+  .hero-button-container button.second-button {
+    width: 100%;
+    height: 7rem;
+    
+  
+  }
+
+  .hero-button-container button.first-button {
+    width: 100%;
+    height: 7rem;
+    
+  
   }
 }

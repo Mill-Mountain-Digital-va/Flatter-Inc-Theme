@@ -12,19 +12,22 @@
 	  <div class= 'hero-button-container'> 
 	  <button alt="contact us" title="contact us" onclick="window.location.href='/contact-us'" class="first-button">button one</button> <button alt="about us" title="about us" onclick="window.location.href='/about-us'" class="second-button">button two</button>
 </div>
+<h3 class="search-text">Find it here:</h3>
+<?php dynamic_sidebar( 'search-header-sidebar' ); ?>
 	</div>
+
+	<!-- Hero Image -->
 		  <div class='hero-slider-image-container'>
 			  <img src="#" alt="hero image" title="hero image">
 </div>
   </div>
 <div id="section-one">
 	<h2>This is a <a href="/" class="link">test</a></h2>
-	<div class="event-slider">
-		<img src="#" alt=""> <img src="#" alt=""> <img src="#" alt=""> <img src="#" alt="">
 
-	</div>
 </div>
 <div id="section-two">
+
+<!-- Event Slider -->
 	
 	<div class="event-slider">
 
@@ -35,6 +38,8 @@
 		<div id='slider'>
 
 		<button class='leftArrow'>&lt;</button>
+		<div class="tab-container">
+
 		<div class="tabs">
 				<div class="tab-content">
 					<div><img src="Koala.jpg" alt="Koala"></div>
@@ -93,6 +98,9 @@
 </div>
 	
 	</div>
+
+		</div>
+	
 	<button class='rightArrow'>&gt;</button>
 </div>
 
