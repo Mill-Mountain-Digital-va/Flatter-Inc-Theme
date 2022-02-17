@@ -1,0 +1,24 @@
+{
+    "name": "millmountain/tab",
+    "category": "widgets",
+    "attributes": {
+        "title": {
+            "type": "string",
+            "default": "Tab"
+        },
+        "icon": {
+            "type": "string",
+            "default": "books"
+        },
+        "id": {
+            "type": "number",
+            "default": null
+        }
+    },
+    "parent": [
+        "millmountain/tabs"
+    ],
+    "usesContext": [
+        "millmountain/tab-variant"
+    ]
+}
