@@ -922,6 +922,9 @@ header {
   /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
+.hero-slider-image-container img{
+  display:none;
+}
   .slider {
     padding: 4rem 2rem;
   }
@@ -962,8 +965,9 @@ header {
     
   
   }
+.slider{
+  gap: 6rem;
+  padding: 6rem 2rem;
+}
 
-  .hero-slider-image-container img{
-    display:none;
-  }
 }
