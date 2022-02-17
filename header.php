@@ -23,7 +23,7 @@
 			<a  href="/" tabindex="-1">
 			<img class="custom-logo" alt="two roads logo" title="two roads logo" height="115" width='300' src="/wp-content/themes/Flatter-Inc-Theme/assets/photos/TwoRoadsDark_Division-1024x273.png">
 </a>
-		
+
 	
 		 
 	
