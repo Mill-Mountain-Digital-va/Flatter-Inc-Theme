@@ -196,7 +196,7 @@ html {
   --box-ten: dodgerblue;
   --p-font: #343434;
   --red-one: #bf0a30;
-  --blue-one: #002868;
+  --blue-one: #2a3c61;
 
   /*--------------------------------------------------------------
 # Fonts
@@ -211,7 +211,7 @@ html {
 --------------------------------------------------------------*/
 
   --menu-font-size: 1.9rem;
-  --p-font-size: 1.3rem;
+  --p-font-size: 1.8rem;
   --button-font-size: 1.5rem;
   --hone-font-size: 2.5rem;
   --htwo-font-size: 2.2rem;
@@ -329,7 +329,7 @@ button {
 a {
   text-decoration: none;
   font-size: var(--p-font-size);
-  font-family: var(--font-two);
+  font-family: var(--font-one);
   color: inherit;
 }
 
@@ -432,7 +432,6 @@ ul li ul li {
   justify-content: space-around;
   align-items: center;
   display: flex;
-  margin-left: 2rem;
   padding: .2rem 0;
 }
 
@@ -581,8 +580,8 @@ header {
   font-size: 4rem;
 }
 
-.hero-slider-image-container {
-  height: 50%;
+.hero-slider-image-container img {
+  width: 71%;
 }
 
 .hero-button-container {
@@ -658,7 +657,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: var(--blue-one);
   min-height: 20rem;
 }
 
@@ -670,8 +669,13 @@ header {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-evenly;
-  align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-align:center
+}
+
+.image-slider .image img{
+  width:50%;
 }
 
 /*--------------------------------------------------------------
@@ -689,7 +693,7 @@ header {
 
 .tabs {
   padding: 2rem;
-  border-radius: .2rem;
+  border-radius: .4rem;
   border: .3rem solid var(--blue-one);
 
   box-shadow: -.1px .1px 1px var(--blue-one);

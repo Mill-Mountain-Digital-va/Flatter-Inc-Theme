@@ -23,16 +23,15 @@
   </div>
 <div id="section-one">
 <div class="image-slider">
-	<div class="image"><img src="" title="" alt=""></div>
-	<div class="image"><img src="" title="" alt=""></div>
-	<div class="image"><img src="" title="" alt=""></div>
-	<div class="image"><img src="" title="" alt=""></div>
-	
+	<div class="image"><img src="https://flatterinc.millmountaindigital.com/wp-content/uploads/2022/02/MicrosoftTeams-image-2.png" title="" alt=""></div>	
 </div>
 
 </div>
 <div id="section-two">
-
+<div class="section-header">
+	<h2>
+	</h2>
+</div>
 <!-- Event Slider -->
 	
 	<div class="event-slider">
