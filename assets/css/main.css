@@ -682,7 +682,7 @@ header {
 # Section Two
 --------------------------------------------------------------*/
 #section-two{
-  padding:4rem 10rem;
+  padding:4rem 2rem;
 }
 .tab-container{
   display:flex;
@@ -933,6 +933,12 @@ img{
   /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
+
+.image-slider .image img{
+  width:70%;
+}
+
+
 .hero-slider-image-container img{
   display:none;
 }
@@ -940,7 +946,14 @@ img{
     gap:0rem;
     padding: 6rem 2rem;
   }
+
+  .tab-one{
+    margin-left: 60rem;
+  }
+  
 }
+
+
 
 @media screen and (max-width: 550px) {
   header{
@@ -980,6 +993,14 @@ img{
 .slider{
   gap: 6rem;
   padding: 6rem 2rem;
+}
+
+.image-slider .image img{
+  width:100%;
+}
+
+.tab-one{
+  margin-left: 130rem;
 }
 
 }
