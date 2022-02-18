@@ -43,7 +43,7 @@
 		
 		<div id='slider'>
 
-		<button class='leftArrow'>&lt;</button>
+		
 		<div class="tab-container">
 
 		<div class="tabs tab-one">
@@ -107,7 +107,6 @@
 
 		</div>
 	
-	<button class='rightArrow'>&gt;</button>
 </div>
 
 

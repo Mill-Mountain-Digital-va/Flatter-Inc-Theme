@@ -12,7 +12,7 @@ let searchbar = document.querySelector("#wp-block-search__input-1");
 
 
 //Search bar text
-searchbar.setAttribute('placeholder', 'Find it here');
+searchbar.setAttribute('placeholder', 'What can we help you with?');
 
 buttons.forEach(item => {
     item.addEventListener('click', (e) => {
