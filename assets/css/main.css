@@ -703,6 +703,7 @@ header {
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
+  min-width:22rem;
 }
 
 .tab-content h3, .tab-content h4{
@@ -710,6 +711,9 @@ font-family: var(--font-two);
 font-weight: 600;
 letter-spacing: -0.022em;
 font-size: 2.8rem;
+}
+.tab-content h4{
+  font-size:2rem;
 }
 .tab-content p {
   font-size: 1.7rem;
