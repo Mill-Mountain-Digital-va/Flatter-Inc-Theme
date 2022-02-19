@@ -33,6 +33,10 @@
 	</h2>
 </div>
 <!-- Event Slider -->
+<div class="heading-section-two">
+	<h2>Meet The Team</h2>
+	<h3> Tag line</h3>
+</div>
 	
 	<div class="event-slider">
 
