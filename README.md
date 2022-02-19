@@ -11,7 +11,7 @@
 - [ESLint](https://marketplace.visualstudio.com/itemdetails?itemName=dbaeumer.vscode-eslint)
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/itemdetails?itemName=esbenp.prettier-vscode)
 - [stylelint](https://marketplace.visualstudio.com/itemdetails?itemName=shinnn.stylelint)
-=======
+
 # Flatter-Inc-Theme
 
 Made for the sole use of Flatter Inc.
