@@ -11,8 +11,6 @@ let searchbar = document.querySelector("#wp-block-search__input-1");
 
 
 
-//Search bar text
-searchbar.setAttribute('placeholder', 'What can we help you with?');
 
 buttons.forEach(item => {
     item.addEventListener('click', (e) => {
@@ -68,10 +66,13 @@ hambutton.addEventListener('click', (e) => {
 })
 
 
-let scrollContainer = function(container, direction) {
-    var amount = direction * container.clientWidth;
-    container.scrollLeft+=amount; 
-}
+//Search bar text
+searchbar.setAttribute('placeholder', 'What can we help you with?');
+
+// let scrollContainer = function(container, direction) {
+//     var amount = direction * container.clientWidth;
+//     container.scrollLeft+=amount; 
+// }
 
 
 // let leftArrow = document.querySelectorAll(".leftArrow");
