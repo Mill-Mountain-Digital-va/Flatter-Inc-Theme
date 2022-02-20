@@ -74,21 +74,21 @@ let scrollContainer = function(container, direction) {
 }
 
 
-let leftArrow = document.querySelectorAll(".leftArrow");
-let rightArrow = document.querySelectorAll(".rightArrow");
-console.log(sliderContainer);
-leftArrow[0].addEventListener('click', (e) =>{
-    console.log('left');
-    let sliderContainer = e.target.closest.querySelector('.tab-container');
-    scrollContainer(sliderContainer, -1);
-});
+// let leftArrow = document.querySelectorAll(".leftArrow");
+// let rightArrow = document.querySelectorAll(".rightArrow");
+// console.log(sliderContainer);
+// leftArrow[0].addEventListener('click', (e) =>{
+//     console.log('left');
+//     let sliderContainer = e.target.closest.querySelector('.tab-container');
+//     scrollContainer(sliderContainer, -1);
+// });
 
 
-rightArrow[0].addEventListener('click', (e)=> {
-    console.log('right');
-    let sliderContainer = e.target.closest.querySelector('.tab-container');
-    scrollContainer(sliderContainer, 1);
-});
+// rightArrow[0].addEventListener('click', (e)=> {
+//     console.log('right');
+//     let sliderContainer = e.target.closest.querySelector('.tab-container');
+//     scrollContainer(sliderContainer, 1);
+// });
 
 
 
