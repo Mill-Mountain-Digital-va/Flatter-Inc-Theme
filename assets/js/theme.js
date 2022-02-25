@@ -8,8 +8,7 @@ let mobilemenu = document.querySelector('.mobile-menu-icon');
 const pageItems = document.querySelectorAll('.page_item');
 const buttons = document.querySelectorAll('button');
 let searchbar = document.querySelector("#wp-block-search__input-1");
-
-
+const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
 
 
 buttons.forEach(item => {
@@ -31,16 +30,9 @@ withChild.forEach(item => {
 
         target.classList.toggle('blink');
 
-
     })
 
-
-
-
 })
-
-
-
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
@@ -50,20 +42,23 @@ pageItems.forEach(item => {
             e.target.classList.toggle('blink');
         }
         newItem.classList.toggle('red');
-
-
     })
 })
 
-
-
-
+accordions.forEach(item =>{
+    item.addEventListener('click', (e) => {
+        let target = e.target.closest('.mill-mountain-accordion-button');
+        target.classList.toggle('.u-none');
+    })
+})
 
 
 hambutton.addEventListener('click', (e) => {
     desktop.classList.toggle('open');
     hambutton.classList.toggle('spin');
 })
+
+
 
 
 //Search bar text
