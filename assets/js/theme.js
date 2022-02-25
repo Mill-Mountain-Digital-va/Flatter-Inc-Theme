@@ -9,6 +9,7 @@ const pageItems = document.querySelectorAll('.page_item');
 const buttons = document.querySelectorAll('button');
 let searchbar = document.querySelector("#wp-block-search__input-1");
 const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
+const accordionSub = document.querySelectorAll(".accordion-sub-container");
 
 
 buttons.forEach(item => {
@@ -45,10 +46,15 @@ pageItems.forEach(item => {
     })
 })
 
-accordions.forEach(item =>{
-    item.addEventListener('click', (e) => {
-        let target = e.target.closest('.mill-mountain-accordion-button');
-        target.classList.toggle('.u-none');
+accordionSub.forEach(item =>{
+    item.setAttribute("id", "accordion-event-target")
+});
+
+accordions.forEach((item , index) =>{
+    
+    item.addEventListener('click', (event) => {
+        let toggleAccordion = accordionSub[index];
+        toggleAccordion.classList.toggle('u-none'); 
     })
 })
 

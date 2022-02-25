@@ -33,12 +33,12 @@
 	</h2>
 </div>
 <!-- Event Slider -->
-<div class="heading-section-two">
+<!-- <div class="heading-section-two">
 	<h2>Meet The Team</h2>
 	<h3> Tag line</h3>
-</div>
+</div> -->
 	
-	<div class="event-slider">
+	<!-- <div class="event-slider">
 
 	
 
@@ -51,7 +51,7 @@
 
 		<div class="tabs tab-one">
 				<div class="tab-content">
-					<div><img src="Koala.jpg" alt="Koala"></div>
+					<div><img src="#" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
@@ -60,7 +60,7 @@
 		
 			<div class="tabs">
 				<div class="tab-content">
-					<div><img src="Koala.jpg" alt="Koala"></div>
+					<div><img src="#" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
@@ -68,7 +68,7 @@
 </div>
 <div class="tabs">
 				<div class="tab-content">
-					<div><img src="Koala.jpg" alt="Koala"></div>
+					<div><img src="#" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
@@ -76,7 +76,7 @@
 </div>
 <div class="tabs">
 				<div class="tab-content">
-					<div><img src="Koala.jpg" alt="Koala"></div>
+					<div><img src="#" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
@@ -84,7 +84,7 @@
 </div>
 <div class="tabs">
 				<div class="tab-content">
-					<div><img src="Koala.jpg" alt="Koala"></div>
+					<div><img src="#" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
@@ -92,7 +92,7 @@
 </div>
 <div class="tabs">
 				<div class="tab-content">
-					<div><img src="Koala.jpg" alt="Koala"></div>
+					<div><img src="#" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
@@ -100,7 +100,7 @@
 </div>	
 			<div class="tabs">
 			<div class="tab-content">
-					<div><img src="Koala.jpg" alt="Koala"></div>
+					<div><img src="#" alt="Koala"></div>
 					<h3>important person</h3>
 					<h4>does important thing</h4>
 					<p>about the super important stuff</p>
@@ -110,12 +110,12 @@
 
 		</div>
 	
-</div>
+</div> -->
 
 
+<!-- </div>
 </div>
-</div>
-</div>
+</div> -->
 <!-- end event slider -->
 <?php
 if ( have_posts() ) :
