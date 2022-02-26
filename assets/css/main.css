@@ -554,7 +554,7 @@ header {
 # Blocks
 --------------------------------------------------------------*/
 
-.story-container .wp-block-cover__inner-container.block-editor-block-list__layout {
+.story-container .wp-block-cover__inner-container {
   display: flex;
   flex-flow: column;
   gap: 4rem;
