@@ -8,7 +8,7 @@
 
 	<div class='hero-slider-text-container'>
 	  <h1> <?php echo do_shortcode( '[hero-heading]' );?>  <span class="underline">Baseline<span></h1>
-	  <p>lorem ipsum</p>
+	  <p>Success in Defense Contracting</p>
 	  <div class= 'hero-button-container'> 
 	  <button alt="contact us" title="contact us" onclick="window.location.href='/contact-us'" class="first-button">button one</button> <button alt="about us" title="about us" onclick="window.location.href='/about-us'" class="second-button">button two</button>
 </div>
@@ -27,11 +27,7 @@
 </div>
 
 </div>
-<div id="section-two">
-<div class="section-header">
-	<h2>
-	</h2>
-</div>
+
 <!-- Event Slider -->
 <!-- <div class="heading-section-two">
 	<h2>Meet The Team</h2>
