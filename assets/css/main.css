@@ -303,6 +303,7 @@ p {
   font-size: 1.6rem;
   color: var(--p-font);
   font-family: .5rem;
+  font-weight:300;
 }
 
 button {
@@ -762,6 +763,10 @@ margin-top: 0;
 img{
   width:100%;
   height: auto;
+}
+
+.title{
+  font-weight:500;
 }
 .u-none{
   display:none !important;
