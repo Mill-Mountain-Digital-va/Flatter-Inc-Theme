@@ -573,8 +573,7 @@ header {
   width: auto;
   font-size: 1.8rem;
   font-weight: 400;
-  max-width: 30rem;
-  min-width: 30rem;
+  width: 23rem;
 }
 /*--------------------------------------------------------------
 # Slider
@@ -1033,14 +1032,14 @@ img{
 
   .hero-button-container button.second-button {
     width: 100%;
-    height: 7rem;
+    height: 5rem;
     
   
   }
 
   .hero-button-container button.first-button {
     width: 100%;
-    height: 7rem;
+    height: 5rem;
     
   
   }
