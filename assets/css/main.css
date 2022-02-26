@@ -212,7 +212,7 @@ html {
 
   --menu-font-size: 1.9rem;
   --p-font-size: 1.8rem;
-  --button-font-size: 1.5rem;
+  --button-font-size: 1.8rem;
   --hone-font-size: 2.5rem;
   --htwo-font-size: 2.2rem;
   --hthree-font-size: 2rem;
@@ -571,7 +571,7 @@ header {
   border: none;
   height: 5rem;
   width: auto;
-  font-size: 1.8rem;
+  font-size: var(--button-font-size);
   font-weight: 400;
   width: 23rem;
 }
