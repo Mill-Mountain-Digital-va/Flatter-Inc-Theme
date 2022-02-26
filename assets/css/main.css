@@ -618,21 +618,21 @@ header {
 
 .hero-button-container button {
   width: 23rem;
-  height: 7rem;
+  height: 5rem;
   background-color: white;
 
 }
 
 .hero-button-container button.first-button {
   width: 23rem;
-  height: 7rem;
+  height: 5rem;
   
 
 }
 
 .hero-button-container button.second-button {
   width: 23rem;
-  height: 7rem;
+  height: 5rem;
   background-color: white;
   border: .4rem solid var(--blue-one);
   color: var(--blue-one);
