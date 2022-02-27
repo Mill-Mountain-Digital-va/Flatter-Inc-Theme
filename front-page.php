@@ -6,6 +6,8 @@
 
 <div class='slider'>
 
+<img class="background-image" src="https://flatterinc.millmountaindigital.com/wp-content/uploads/2022/02/background1.jpeg">
+
 	<div class='hero-slider-text-container'>
 	  <h1> <?php echo do_shortcode( '[hero-heading]' );?>  <span class="underline">Baseline<span></h1>
 	  <p>Success in Defense Contracting</p>

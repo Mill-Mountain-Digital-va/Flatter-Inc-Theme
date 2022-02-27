@@ -589,6 +589,28 @@ header {
   align-items: center;
   padding: 10rem 0rem;
 }
+
+.background-image{
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    object-fit: cover;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    opacity: .2;
+    z-index: 1;
+    max-height: 89%;
+}
 .hero-slider-text-container {
   display: flex;
   flex-flow: column nowrap;
@@ -687,6 +709,7 @@ header {
   min-height: 20rem;
   padding: 3rem 0 0 0;
   margin-bottom: -.5rem;  
+  z-index: 20
 }
 
 #section-one a {
