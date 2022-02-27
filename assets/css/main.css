@@ -813,7 +813,16 @@ margin-top: 0;
   z-index: 30;
 }
 
-
+.core-values div.wp-block-cover__inner-container {
+  display: flex;
+  flex-flow: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a3c61;
+  max-width: 60rem;
+  padding: 3rem 0;
+}
 
 /*--------------------------------------------------------------
 # Helpers
