@@ -19,9 +19,9 @@
 	</div>
 
 	<!-- Hero Image -->
-		  <div class='hero-slider-image-container'>
+		  <!-- <div class='hero-slider-image-container'>
 			  <img src="https://flatterinc.millmountaindigital.com/wp-content/uploads/2022/02/hero.png" alt="hero image" title="hero image">
-</div>
+</div> -->
   </div>
 <div id="section-one">
 <div class="image-slider">
