@@ -609,7 +609,7 @@ header {
     box-shadow: none;
     opacity: .2;
     z-index: 1;
-    max-height: 89%;
+
 }
 .hero-slider-text-container {
   display: flex;
@@ -708,7 +708,8 @@ header {
   background-color: var(--blue-one);
   min-height: 20rem;
   padding: 3rem 0 0 0;
-  margin-bottom: -.5rem;  
+  margin-bottom: -.5rem; 
+  position: relative; 
   z-index: 20
 }
 
