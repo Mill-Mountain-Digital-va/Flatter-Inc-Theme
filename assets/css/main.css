@@ -743,6 +743,9 @@ header {
     z-index: 30 !important;
     position: relative !important;
   }
+  .mill-mountain-tab{
+    opacity: .98;
+  }
   
 #section-two{
   padding:4rem 2rem;
