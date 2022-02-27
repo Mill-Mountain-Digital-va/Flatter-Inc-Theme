@@ -616,6 +616,7 @@ header {
   flex-flow: column nowrap;
   max-width: 50rem;
   gap: 2rem;
+  z-index: 10;
 }
 
 .hero-slider-text-container p {
@@ -1012,6 +1013,10 @@ img{
   /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
+
+.hero-slider-text-container{
+  padding: 14rem 2rem 6rem 2rem;
+}
 
 .image-slider .image img{
   width:70%;
