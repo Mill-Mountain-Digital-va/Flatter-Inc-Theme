@@ -746,6 +746,13 @@ header {
   .mill-mountain-tab{
     opacity: .98;
   }
+
+  #mission div.wp-block-cover__inner-container{
+    display:flex;
+    flex-flow: column nowrap;
+    max-width: 45rem;
+    gap:3rem;
+  }
   
 #section-two{
   padding:4rem 2rem;
