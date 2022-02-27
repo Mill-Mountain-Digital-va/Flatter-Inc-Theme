@@ -822,6 +822,7 @@ margin-top: 0;
   background-color: #2a3c61;
   max-width: 60rem;
   padding: 3rem 0;
+  border: 1rem solid #bf0a30;
 }
 .wp-block-cover.is-light.max-height.z-index-30 img {
   height: 67%;
