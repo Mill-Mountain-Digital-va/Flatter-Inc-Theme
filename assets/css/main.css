@@ -750,10 +750,11 @@ header {
   #mission div.wp-block-cover__inner-container{
     display:flex;
     flex-flow: column nowrap;
-    max-width: 45rem;
+    max-width: 68rem;
     gap:3rem;
     justify-content: center;
     align-items: center;
+    padding: 3rem 1rem;
   }
   
 #section-two{
