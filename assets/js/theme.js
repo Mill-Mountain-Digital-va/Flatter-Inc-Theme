@@ -46,8 +46,10 @@ pageItems.forEach(item => {
     })
 })
 
-accordionSub.forEach(item =>{
-    item.setAttribute("id", "accordion-event-target")
+accordionSub.forEach((item,index) =>{
+    item.setAttribute("class", "accordion-event-target");
+    item.setAttribute("id", `accordion-${index}`);
+    
 });
 
 accordions.forEach((item , index) =>{
