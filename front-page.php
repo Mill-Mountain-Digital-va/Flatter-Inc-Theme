@@ -6,7 +6,7 @@
 
 <div class='slider'>
 
-<img class="background-image" src="https://flatterinc.millmountaindigital.com/wp-content/uploads/2022/02/background1.jpeg">
+<img class="background-image" alt="hero image of american flag" title="hero image of american flag" src="https://flatterinc.millmountaindigital.com/wp-content/uploads/2022/02/background1.jpeg">
 
 	<div class='hero-slider-text-container'>
 	  <h1> <?php echo do_shortcode( '[hero-heading]' );?>  <span class="underline">Baseline<span></h1>
@@ -25,7 +25,7 @@
   </div>
 <div id="section-one">
 <div class="image-slider">
-	<div class="image"><img src="https://flatterinc.millmountaindigital.com/wp-content/uploads/2022/02/MicrosoftTeams-image-2.png" title="" alt=""></div>	
+	<div class="image"><img src="https://flatterinc.millmountaindigital.com/wp-content/uploads/2022/02/MicrosoftTeams-image-2.png" title="flatter inc awards" alt="flatter inc awards"></div>	
 </div>
 
 </div>
