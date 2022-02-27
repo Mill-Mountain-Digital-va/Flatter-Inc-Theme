@@ -828,6 +828,31 @@ margin-top: 0;
   height: 67%;
 }
 
+
+#service-section {
+  margin-top: -15rem;
+  padding-top: 4rem;
+}
+
+.wp-block-column.service-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80rem;
+  gap: 3rem;
+  padding: 3rem 1rem;
+}
+
+.wp-block-cover-image .wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container {
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
