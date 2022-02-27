@@ -1017,6 +1017,9 @@ img{
 .hero-slider-text-container{
   padding: 10rem 2rem 6rem 2rem;
 }
+.background-image{
+  height: 100vh;
+}
 
 .image-slider .image img{
   width:70%;
