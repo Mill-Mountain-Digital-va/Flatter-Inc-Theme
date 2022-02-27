@@ -585,7 +585,7 @@ header {
   display: flex;
   flex-flow: row-reverse wrap-reverse;
   justify-content: center;
-  gap:9reßm;
+  gap:9rem;
   align-items: center;
   padding: 10rem 0rem;
 }
@@ -917,7 +917,7 @@ img{
   }
 
   header{
-    gap:15rem;
+    gap:10rem;
   }
   .desktop-mobile {
     width: 100%;
