@@ -1105,4 +1105,8 @@ img{
   margin-left: 130rem;
 }
 
+#section-one{
+  min-height: 0rem;
+}
+
 }
