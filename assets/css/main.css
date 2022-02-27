@@ -752,6 +752,8 @@ header {
     flex-flow: column nowrap;
     max-width: 45rem;
     gap:3rem;
+    justify-content: center;
+    align-items: center;
   }
   
 #section-two{
