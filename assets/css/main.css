@@ -592,7 +592,7 @@ header {
 
 .background-image{
  
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -1084,6 +1084,15 @@ img{
 
 #section-one{
   margin-top: -2.2rem;
+}
+
+.accordion-two{
+background-color: white;
+}
+.mill-mountain-accordion-container
+{
+  z-index: 30;
+  position: relative;
 }
 
 .image-slider .image img{
