@@ -575,6 +575,8 @@ header {
   font-weight: 400;
   width: 23rem;
 }
+
+
 /*--------------------------------------------------------------
 # Slider
 --------------------------------------------------------------*/
@@ -583,7 +585,7 @@ header {
   display: flex;
   flex-flow: row-reverse wrap-reverse;
   justify-content: center;
-  gap:9rem;
+  gap:9reßm;
   align-items: center;
   padding: 10rem 0rem;
 }
@@ -1010,7 +1012,7 @@ img{
 
 @media screen and (max-width: 550px) {
   header{
-    gap:0rem;
+    gap:20rem;
   }
   #content {
     margin-top: 0rem;
