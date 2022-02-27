@@ -823,6 +823,9 @@ margin-top: 0;
   max-width: 60rem;
   padding: 3rem 0;
 }
+.wp-block-cover.is-light.max-height.z-index-30 img {
+  height: 67%;
+}
 
 /*--------------------------------------------------------------
 # Helpers
