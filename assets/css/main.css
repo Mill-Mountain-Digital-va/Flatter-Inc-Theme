@@ -1062,6 +1062,9 @@ img{
   .custom-logo-link img {
     max-width: 20rem;
   }
+  .site-branding{
+    margin-left:1rem;
+  }
 
   .children li {
     margin-left: 0;
