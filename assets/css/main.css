@@ -1082,6 +1082,10 @@ img{
   padding: 0rem 0 0rem 0;
 }
 
+#section-one{
+  margin-top: -2rem;
+}
+
 .image-slider .image img{
   width:100%;
 }
