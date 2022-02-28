@@ -2,7 +2,7 @@
 
 let desktop = document.querySelector('.desktop-mobile');
 let hambutton = document.querySelector('.hamburger-menu');
-const withChild = document.querySelectorAll('.menu-item_has_children');
+const withChild = document.querySelectorAll('.menu-item-has-children');
 const children = document.querySelectorAll('.sub-menu');
 let mobilemenu = document.querySelector('.mobile-menu-icon');
 const pageItems = document.querySelectorAll('.menu-item');
