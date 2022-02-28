@@ -49,6 +49,7 @@ pageItems.forEach(item => {
 accordionSub.forEach((item,index) =>{
     item.setAttribute("class", "accordion-event-target");
     item.setAttribute("id", `accordion-${index}`);
+
     
 });
 
@@ -71,6 +72,8 @@ hambutton.addEventListener('click', (e) => {
 
 //Search bar text
 searchbar.setAttribute('placeholder', 'What can we help you with?');
+searchbar.setAttribute('title', 'search here');
+searchbar.setAttribute('alt', 'search here');
 
 // let scrollContainer = function(container, direction) {
 //     var amount = direction * container.clientWidth;
