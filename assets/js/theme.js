@@ -55,8 +55,8 @@ pageItems.forEach(item => {
       
         if (target.classList != "blink" ){
             e.target.classList.toggle('blink');
-            desktop.classList.toggle('open');
-            hambutton.classList.toggle('spin');
+            desktop.classList.remove('open');
+            hambutton.classList.remove('spin');
          
 
 
@@ -64,8 +64,8 @@ pageItems.forEach(item => {
         else if (target.classList == "blink"){
             e.target.classList.remove("blink");
             e.target.classList.add("blink");
-            desktop.classList.toggle('open');
-            hambutton.classList.toggle('spin');
+            desktop.classList.remove('open');
+            hambutton.classList.remove('spin');
          
         }
     })
