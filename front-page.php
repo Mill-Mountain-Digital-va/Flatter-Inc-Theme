@@ -12,7 +12,7 @@
 	  <h1> <?php echo do_shortcode( '[hero-heading]' );?>  <span class="underline">Baseline<span></h1>
 	  <p>Success in Defense Contracting</p>
 	  <div class= 'hero-button-container'> 
-	  <button alt="contact us" title="contact us" onclick="window.location.href='/#accordion-0'" class="first-button">Capabilities</button> <button alt="about us" title="about us" onclick="window.location.href='/#accordion-0'" class="second-button">Contact Us</button>
+	  <button alt="capabilities" title="capabilities" onclick="window.location.href='/#accordion-0'" class="first-button">Capabilities</button> <button alt="contact us" title="contact us" onclick="window.location.href='/#contact-us'" class="second-button">Contact Us</button>
 </div>
 
 <?php dynamic_sidebar( 'search-header-sidebar' ); ?>
