@@ -44,10 +44,18 @@ pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
         let newItem = e.target.closest('.menu-item');
         target = e.target;
-        if (target.classList != "blink") {
+        if (target.classList != "blink" && newItem.classList != "red") {
             e.target.classList.toggle('blink');
+            newItem.classList.add('red');
+            newItem.classList.remove('red')
+
+
         }
-        newItem.classList.toggle('red');
+        else if (target.classList === "blink" && newItem.classList === "red"){
+            e.target.classList.remove("blink");
+            e.target.classList.add("blink");
+            newItem.classList.remove('red');
+        }
     })
 })
 
