@@ -47,7 +47,7 @@ pageItems.forEach(item => {
         if (target.classList != "blink" && newItem.classList != "red") {
             e.target.classList.toggle('blink');
             newItem.classList.add('red');
-            newItem.classList.remove('red')
+            newItem.classList.remove('red');
 
 
         }
