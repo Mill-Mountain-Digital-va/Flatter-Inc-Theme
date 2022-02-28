@@ -28,7 +28,12 @@ buttons.forEach(item => {
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
-  
+    item.addEventListener('click', (e)=>{
+
+        desktop.classList.toggle('open');
+        hambutton.classList.toggle('spin');
+
+    })
    
 })
 
@@ -38,7 +43,6 @@ withChild.forEach(item => {
     caret.classList.add('caret');
     item.appendChild(caret);
     item.addEventListener('click', (e) => {
-        
 
         target.classList.toggle('blink');
 
@@ -46,26 +50,25 @@ withChild.forEach(item => {
 
 })
 
-console.log(pageItems);
-
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
+        target = e.target;
        
-       
-        desktop.classList.remove('open');
-            hambutton.classList.remove('spin');
+    
       
-        if (item.classList != "blink" ){
-            item.classList.toggle('blink');
-       
+        if (target.classList != "blink" ){
+            e.target.classList.toggle('blink');
+            desktop.classList.toggle('open');
+            hambutton.classList.toggle('spin');
          
 
 
         }
-        else if (item.classList == "blink"){
-           item.classList.remove("blink");
-            item.classList.add("blink");
-           
+        else if (target.classList == "blink"){
+            e.target.classList.remove("blink");
+            e.target.classList.add("blink");
+             desktop.classList.toggle('open');
+        hambutton.classList.toggle('spin');
          
         }
     })
