@@ -11,6 +11,10 @@ let searchbar = document.querySelector("#wp-block-search__input-1");
 let searchButton = document.querySelector(".wp-block-search__button ");
 const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
 const accordionSub = document.querySelectorAll(".accordion-sub-container");
+const mainMenu = document.querySelector(".menu-menu-container");
+
+
+mainMenu.setAttribute("class", "menu");
 
 
 buttons.forEach(item => {
