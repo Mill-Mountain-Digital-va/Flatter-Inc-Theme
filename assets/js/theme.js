@@ -2,10 +2,10 @@
 
 let desktop = document.querySelector('.desktop-mobile');
 let hambutton = document.querySelector('.hamburger-menu');
-const withChild = document.querySelectorAll('.page_item_has_children');
-const children = document.querySelectorAll('.children');
+const withChild = document.querySelectorAll('.menu_item_has_children');
+const children = document.querySelectorAll('.sub-menu');
 let mobilemenu = document.querySelector('.mobile-menu-icon');
-const pageItems = document.querySelectorAll('.page_item');
+const pageItems = document.querySelectorAll('.menu_item');
 const buttons = document.querySelectorAll('button');
 let searchbar = document.querySelector("#wp-block-search__input-1");
 let searchButton = document.querySelector(".wp-block-search__button ");
@@ -38,7 +38,7 @@ withChild.forEach(item => {
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
-        let newItem = e.target.closest('.page_item');
+        let newItem = e.target.closest('.menu_item');
         target = e.target;
         if (target.classList != "blink") {
             e.target.classList.toggle('blink');
