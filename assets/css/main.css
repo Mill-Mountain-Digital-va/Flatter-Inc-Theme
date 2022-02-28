@@ -919,6 +919,23 @@ img{
 .open {
   display: auto;
 }
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  min-height: 3rem;
+  z-index: 30;
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+#footer a {
+  font-size: 1.8rem;
+}
 
 /*--------------------------------------------------------------
 # Media Queries
