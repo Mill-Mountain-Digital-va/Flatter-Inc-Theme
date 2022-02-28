@@ -27,10 +27,10 @@ buttons.forEach(item => {
 })
 
 children.forEach(item => {
-    newItem = e.target.closest('.menu-item');
+   
     item.setAttribute("tabindex", "0");
     item.addEventListener('click', (e)=>{
-        newItem.classList.toggle('blink');
+    
         desktop.classList.toggle('open');
         hambutton.classList.toggle('spin');
 
