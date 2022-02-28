@@ -51,10 +51,10 @@ pageItems.forEach(item => {
 
 
         }
-        else if (target.classList === "blink" && newItem.classList === "red"){
+        else if (target.classList == "blink"){
             e.target.classList.remove("blink");
             e.target.classList.add("blink");
-            newItem.classList.remove('red');
+         
         }
     })
 })
