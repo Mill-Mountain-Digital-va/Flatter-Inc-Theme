@@ -31,7 +31,7 @@ function process_contact_form() {
 	$sendStatus = wp_mail( $to, $subject, $body, $headers );
 
 	if ( $sendStatus ) {
-		wp_redirect( '/about-us/', 301 );
+		wp_redirect( '/thank-you/', 301 );
 		exit;
 	}
 
