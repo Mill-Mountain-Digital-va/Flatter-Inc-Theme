@@ -57,16 +57,17 @@ pageItems.forEach(item => {
     
       
         if (newItem.classList != "blink" ){
-            e.target.classList.toggle('blink');
+            newItem.classList.toggle('blink');
             desktop.classList.toggle('open');
             hambutton.classList.toggle('spin');
+            
          
 
 
         }
         else if (newItem.classList === "blink"){
-            e.target.classList.remove("blink");
-            e.target.classList.add("blink");
+            newItem.classList.remove("blink");
+            newitem.classList.add("blink");
              desktop.classList.toggle('open');
         hambutton.classList.toggle('spin');
          
