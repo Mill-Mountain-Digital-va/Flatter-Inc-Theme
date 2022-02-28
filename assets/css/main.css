@@ -373,11 +373,11 @@ li {
 ul.sub-menu {
   display: none !important  ;
 }
-.menu_item:hover ul.sub-menu,
-li.menu_item a:focus ul.sub-menu,
-.menu_item:active ul.sub-menu,
-.menu_item:target ul.sub-menu,
-.menu_item:checked ul.sub-menu {
+.menu-item:hover ul.sub-menu,
+li.menu-item a:focus ul.sub-menu,
+.menu-item:active ul.sub-menu,
+.menu-item:target ul.sub-menu,
+.menu-item:checked ul.sub-menu {
   display: flex !important;
   flex-flow: column;
   visibility: visible !important;
@@ -960,19 +960,19 @@ img{
     z-index: 1000;
   }
 
-  .menu_item a:focus .sub-menu li,
-  .menu_item a:hover .sub-menu li {
+  .menu-item a:focus .sub-menu li,
+  .menu-item a:hover .sub-menu li {
     background-color: var(--red-one);
     -webkit-tap-highlight-color: var(--red-one);
   }
 
-  .menu_item:focus ul.sub-menu,
-  .menu_item:hover ul.sub-menu,
-  .menu_item:active ul.sub-menu,
-  .menu_item a:focus ul.sub-menu,
-  .menu_item a:hover ul.sub-menu,
-  .menu_item a:active ul.sub-menu,
-  .menu_item a:target ul.sub-menu {
+  .menu-item:focus ul.sub-menu,
+  .menu-item:hover ul.sub-menu,
+  .menu-item:active ul.sub-menu,
+  .menu-item a:focus ul.sub-menu,
+  .menu-item a:hover ul.sub-menu,
+  .menu-item a:active ul.sub-menu,
+  .menu-item a:target ul.sub-menu {
     position: initial;
     flex-flow: column;
     align-items: center;
