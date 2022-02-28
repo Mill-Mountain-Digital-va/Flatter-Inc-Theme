@@ -28,7 +28,8 @@ buttons.forEach(item => {
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
-    
+    desktop.classList.toggle('open');
+    hambutton.classList.toggle('spin');
    
 })
 
