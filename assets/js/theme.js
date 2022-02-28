@@ -14,7 +14,7 @@ const accordionSub = document.querySelectorAll(".accordion-sub-container");
 const mainMenu = document.querySelector(".menu-menu-container");
 let customLogo = document.querySelector(".custom-logo-link");
 
-customLogo.setAttribute("src", "/");
+customLogo.setAttribute("href", "/");
 
 
 mainMenu.setAttribute("class", "menu");
