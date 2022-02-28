@@ -47,11 +47,10 @@ withChild.forEach(item => {
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
         target = e.target;
-        item.addEventListener("click", (e) =>{
-            desktop.classList.toggle('open');
-            hambutton.classList.toggle('spin');
+        desktop.classList.toggle('open');
+        hambutton.classList.toggle('spin');
     
-        } )
+      
         if (target.classList != "blink" ){
             e.target.classList.toggle('blink');
          
