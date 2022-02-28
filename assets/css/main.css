@@ -853,9 +853,20 @@ margin-top: 0;
   justify-content: center;
   gap: 3rem;
 }
+
+.quality-container div .wp-block-columns {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: start;
+}
+
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+.strong{
+  font-weight: 500;
+}
 
 .z-index-30{
   z-index: 30;
