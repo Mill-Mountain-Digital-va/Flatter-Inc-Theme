@@ -27,10 +27,9 @@ buttons.forEach(item => {
 })
 
 children.forEach(item => {
-   
     item.setAttribute("tabindex", "0");
     item.addEventListener('click', (e)=>{
-    
+
         desktop.classList.toggle('open');
         hambutton.classList.toggle('spin');
 
@@ -68,7 +67,7 @@ pageItems.forEach(item => {
         }
         else if (newItem.classList === "blink"){
             newItem.classList.remove("blink");
-            newitem.classList.add("blink");
+            newItem.classList.add("blink");
              desktop.classList.toggle('open');
         hambutton.classList.toggle('spin');
          
