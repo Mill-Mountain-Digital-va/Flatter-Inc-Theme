@@ -52,11 +52,11 @@ withChild.forEach(item => {
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
-        target = e.target;
+      
        
     
       
-        if (target.classList != "blink" ){
+        if (e.target.classList != "blink" ){
             e.target.classList.toggle('blink');
             desktop.classList.toggle('open');
             hambutton.classList.toggle('spin');
@@ -64,7 +64,7 @@ pageItems.forEach(item => {
 
 
         }
-        else if (target.classList == "blink"){
+        else if (e.target.classList == "blink"){
             e.target.classList.remove("blink");
             e.target.classList.add("blink");
              desktop.classList.toggle('open');
