@@ -356,28 +356,28 @@ li {
   text-decoration: none;
 }
 
-.children a {
+.sub-menu a {
   color: var(--black);
 }
-.children li:hover {
+.sub-menu li:hover {
   /* child items when hovered*/
   color: var(--white);
   background-color: var(--blue-one);
 }
 
-.children li:hover a {
+.sub-menu li:hover a {
   /* child links when hovered*/
   color: var(--white);
 }
 
-ul.children {
+ul.sub-menu {
   display: none !important  ;
 }
-.page_item:hover ul.children,
-li.page_item a:focus ul.children,
-.page_item:active ul.children,
-.page_item:target ul.children,
-.page_item:checked ul.children {
+.menu_item:hover ul.sub-menu,
+li.menu_item a:focus ul.sub-menu,
+.menu_item:active ul.sub-menu,
+.menu_item:target ul.sub-menu,
+.menu_item:checked ul.sub-menu {
   display: flex !important;
   flex-flow: column;
   visibility: visible !important;
@@ -940,7 +940,7 @@ img{
 
   /* SUBNAV */
 
-  .children li {
+  .sub-menu li {
     background-color: var(--blue-one);
     display: block;
     margin-left: 5rem;
@@ -948,7 +948,7 @@ img{
     position: relative;
     text-decoration: none;
   }
-  .children a {
+  .sub-menu a {
     color: var(--white);
   }
 
@@ -956,23 +956,23 @@ img{
     display: flex;
     flex-flow: column nowrap;
   }
-  .children {
+  .sub-menu {
     z-index: 1000;
   }
 
-  .page_item a:focus .children li,
-  .page_item a:hover .children li {
+  .menu_item a:focus .sub-menu li,
+  .menu_item a:hover .sub-menu li {
     background-color: var(--red-one);
     -webkit-tap-highlight-color: var(--red-one);
   }
 
-  .page_item:focus ul.children,
-  .page_item:hover ul.children,
-  .page_item:active ul.children,
-  .page_item a:focus ul.children,
-  .page_item a:hover ul.children,
-  .page_item a:active ul.children,
-  .page_item a:target ul.children {
+  .menu_item:focus ul.sub-menu,
+  .menu_item:hover ul.sub-menu,
+  .menu_item:active ul.sub-menu,
+  .menu_item a:focus ul.sub-menu,
+  .menu_item a:hover ul.sub-menu,
+  .menu_item a:active ul.sub-menu,
+  .menu_item a:target ul.sub-menu {
     position: initial;
     flex-flow: column;
     align-items: center;
@@ -1155,7 +1155,7 @@ img{
     margin-left:1rem;
   }
 
-  .children li {
+  .sub-menu li {
     margin-left: 0;
   }
   .hero-button-container {
