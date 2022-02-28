@@ -3,7 +3,7 @@
  
  </div> <!-- Close Content -->
 
- <div id="contact-extra">
+ <div id="contact-extra" class="z-index-30">
 <div id="contact-container">
 
     <div id="message-title-container">
