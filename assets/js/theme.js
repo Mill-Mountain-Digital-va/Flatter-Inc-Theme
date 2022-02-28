@@ -50,23 +50,22 @@ console.log(pageItems);
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
-        target = e.target;
        
-    
-      
-        if (target.classList != "blink" ){
-            e.target.classList.toggle('blink');
-            desktop.classList.remove('open');
+       
+        desktop.classList.remove('open');
             hambutton.classList.remove('spin');
+      
+        if (item.classList != "blink" ){
+            item.classList.toggle('blink');
+       
          
 
 
         }
-        else if (target.classList == "blink"){
-            e.target.classList.remove("blink");
-            e.target.classList.add("blink");
-            desktop.classList.remove('open');
-            hambutton.classList.remove('spin');
+        else if (item.classList == "blink"){
+           item.classList.remove("blink");
+            item.classList.add("blink");
+           
          
         }
     })
