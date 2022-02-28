@@ -65,7 +65,7 @@ pageItems.forEach(item => {
 
 
         }
-        else if (newItem.classList === "blink"){
+        else if (newItem.classList == "blink"){
             newItem.classList.remove("blink");
             newItem.classList.add("blink");
              desktop.classList.toggle('open');
