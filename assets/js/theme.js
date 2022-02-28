@@ -8,6 +8,7 @@ let mobilemenu = document.querySelector('.mobile-menu-icon');
 const pageItems = document.querySelectorAll('.page_item');
 const buttons = document.querySelectorAll('button');
 let searchbar = document.querySelector("#wp-block-search__input-1");
+let searchButton = document.querySelector(".wp-block-search__button ");
 const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
 const accordionSub = document.querySelectorAll(".accordion-sub-container");
 
@@ -72,8 +73,8 @@ hambutton.addEventListener('click', (e) => {
 
 //Search bar text
 searchbar.setAttribute('placeholder', 'What can we help you with?');
-searchbar.setAttribute('title', 'search here');
-searchbar.setAttribute('alt', 'search here');
+searchButton.setAttribute('title', 'search here');
+searchButton.setAttribute('alt', 'search here');
 
 // let scrollContainer = function(container, direction) {
 //     var amount = direction * container.clientWidth;
