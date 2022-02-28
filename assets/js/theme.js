@@ -28,8 +28,7 @@ buttons.forEach(item => {
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
-    desktop.classList.remove('open');
-    hambutton.classList.remove('spin');
+  
    
 })
 
@@ -46,6 +45,8 @@ withChild.forEach(item => {
     })
 
 })
+
+console.log(pageItems);
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
