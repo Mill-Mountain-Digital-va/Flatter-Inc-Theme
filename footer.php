@@ -2,7 +2,6 @@
  
  
  </div> <!-- Close Content -->
- <footer id="footer" role="contentinfo">
 
  <div id="contact-extra">
 <div id="contact-container">
@@ -61,6 +60,9 @@
       </div>
     
 </div>
+ <footer id="footer" role="contentinfo">
+
+ 
 
 
 
