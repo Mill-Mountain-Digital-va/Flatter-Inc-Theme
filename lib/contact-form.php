@@ -9,7 +9,7 @@ function process_contact_form() {
 	$jobType  = $_POST['jobtype'];
 	$theEmail = $_POST['theemail'];
 	$phone    = $_POST['phone'];
-	$to       = array( 'mike@millmountaindigital.com' );
+	$to       = array( 'contact@millmountaindigital.com' );
 	$subject  = '' . $business;
 	$mybody   = '';
 	$mybody  .= '<table>';
