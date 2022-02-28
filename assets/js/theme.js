@@ -28,11 +28,7 @@ buttons.forEach(item => {
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
-    item.addEventListener("click", (e) =>{
-        desktop.classList.toggle('open');
-        hambutton.classList.toggle('spin');
-
-    } )
+   
 })
 
 withChild.forEach(item => {
@@ -50,8 +46,12 @@ withChild.forEach(item => {
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
-        let newItem = e.target.closest('.menu-item');
         target = e.target;
+        item.addEventListener("click", (e) =>{
+            desktop.classList.toggle('open');
+            hambutton.classList.toggle('spin');
+    
+        } )
         if (target.classList != "blink" ){
             e.target.classList.toggle('blink');
          
