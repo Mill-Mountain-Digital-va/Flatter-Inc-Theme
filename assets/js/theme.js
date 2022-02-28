@@ -28,6 +28,8 @@ buttons.forEach(item => {
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
+    desktop.classList.toggle('open');
+    hambutton.classList.toggle('spin');
    
 })
 
@@ -37,6 +39,7 @@ withChild.forEach(item => {
     caret.classList.add('caret');
     item.appendChild(caret);
     item.addEventListener('click', (e) => {
+        
 
         target.classList.toggle('blink');
 
