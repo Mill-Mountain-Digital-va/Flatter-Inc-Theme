@@ -1156,9 +1156,6 @@ img{
 .image-slider .image img{
   width:70%;
 }
-#service-section .wp-block-cover__inner-container .wp-block-columns {
-  flex-flow: row-reverse wrap;
-}
 
 .hero-slider-image-container img{
   display:none;
@@ -1235,5 +1232,9 @@ img{
 #section-one{
   min-height: 0rem;
 }
+#service-section .wp-block-cover__inner-container .wp-block-columns {
+  flex-flow: row-reverse wrap;
+}
+
 
 }
