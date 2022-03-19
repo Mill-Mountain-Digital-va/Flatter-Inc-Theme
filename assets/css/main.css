@@ -883,8 +883,11 @@ margin-top: 0;
   gap: 3rem;
   width: 100%;
 }
-#contact-us .wp-block-cover{
-  padding:0 !important;
+#contact-us.wp-block-cover {
+  padding: 0rem !important;
+}
+#contact-us .wp-block-columns {
+  margin-bottom: -1.75rem;
 }
 /*--------------------------------------------------------------
 # Helpers
