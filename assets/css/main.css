@@ -902,6 +902,12 @@ margin-top: 0;
   gap: 2rem;
 }
 
+#contact-container {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
 #message-title-container h1 {
   font-size: 4rem;
   font-weight: 700;
