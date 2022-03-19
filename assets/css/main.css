@@ -833,6 +833,9 @@ margin-top: 0;
   margin-top: -15rem;
   padding-top: 4rem;
 }
+#service-section .wp-block-cover__inner-container .wp-block-columns {
+  flex-flow: row-reverse nowrap;
+}
 
 .wp-block-column.service-text {
   display: flex;
@@ -1153,7 +1156,9 @@ img{
 .image-slider .image img{
   width:70%;
 }
-
+#service-section .wp-block-cover__inner-container .wp-block-columns {
+  flex-flow: row-reverse wrap;
+}
 
 .hero-slider-image-container img{
   display:none;
