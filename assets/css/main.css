@@ -892,6 +892,22 @@ margin-top: 0;
 #contact-us .wp-block-columns {
   margin-bottom: -1.75rem;
 }
+
+#message-title-container p {
+  font-size: 1.8rem;
+}
+#message-title-container {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+#message-title-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
