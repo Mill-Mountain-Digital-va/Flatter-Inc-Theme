@@ -936,6 +936,11 @@ margin-top: 0;
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+input[type="submit"] {
+  width: 20.7rem;
+  height: 3rem;
+ 
+}
 .button-contact:hover {
   background-color: lightgray;
 }
@@ -945,7 +950,7 @@ textarea{
   border: 1px solid black;
   border-radius: .4rem;
   height: 5rem;
-  width: 18rem;
+  width: 20rem;
 
 }
 #input-item {
@@ -953,7 +958,7 @@ textarea{
   border: 1px solid black;
   border-radius: .4rem;
   height: 2rem;
-  width: 18rem;
+  width: 20rem;
 }
 
 .social-bar {
