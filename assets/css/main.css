@@ -924,8 +924,11 @@ margin-top: 0;
   font-weight: 500;
 }
 .social-icon {
-  width: 4rem;
+  width: 3rem;
   filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1807%) hue-rotate(182deg) brightness(97%) contrast(92%);
+}
+.phone-icon{
+  width:2rem;
 }
 .z-index-30{
   z-index: 30;
