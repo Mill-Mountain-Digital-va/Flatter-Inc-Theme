@@ -941,7 +941,7 @@ input[type="submit"] {
   height: 3rem;
  
 }
-.button-contact:hover {
+.story-container button:hover {
   background-color: lightgray;
 }
 
