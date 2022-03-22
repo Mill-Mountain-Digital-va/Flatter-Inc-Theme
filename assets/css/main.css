@@ -926,6 +926,13 @@ margin-top: 0;
   gap: 2rem;
   align-items: center;
 }
+.header-social-bar{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
 .phone-bar {
   display: flex;
   flex-flow: row nowrap;
@@ -1002,6 +1009,9 @@ img{
 
 /* Ipad to Mobile */
 @media screen and (max-width: 1250px) {
+  .header-social-bar{
+margin-top:1rem;
+  }
   ul li ul {
     display: flex;
 
