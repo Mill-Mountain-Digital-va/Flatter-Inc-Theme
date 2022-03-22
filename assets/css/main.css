@@ -325,6 +325,19 @@ button {
 /*--------------------------------------------------------------
 # Nav
 --------------------------------------------------------------*/
+nav{
+line-height: 1;
+width: auto;
+display: flex;
+flex-flow: row nowrap;
+justify-content: center;
+align-items: center;
+}
+.heading-phone{
+ 
+    margin-left: 4rem;
+
+}
 /* Sub Nav */
 
 a {
@@ -1007,6 +1020,12 @@ img{
 
 /* Ipad to Mobile */
 @media screen and (max-width: 1250px) {
+  nav{
+    display:block;
+  }
+  .heading-phone{
+    display:none;
+  }
   .header-social-bar{
     display: flex;
     flex-flow: row nowrap;
