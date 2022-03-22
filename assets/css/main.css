@@ -936,6 +936,9 @@ margin-top: 0;
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+.button-contact:hover {
+  background-color: lightgray;
+}
 
 textarea{
   color: gray;
