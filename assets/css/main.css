@@ -920,9 +920,17 @@ margin-top: 0;
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
-.social-bar{
+.social-bar {
   display: flex;
-  flex-flow:row nowrap;
+  flex-flow: row nowrap;
+  gap: 2rem;
+  align-items: center;
+}
+.phone-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: .5rem;
+  align-items: center;
 }
 .strong{
   font-weight: 500;
