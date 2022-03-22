@@ -986,7 +986,7 @@ textarea{
   filter: brightness(0) saturate(100%) invert(21%) sepia(16%) saturate(1807%) hue-rotate(182deg) brightness(97%) contrast(92%);
 }
 .social-icon:hover{
-  filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2841%) hue-rotate(354deg) brightness(93%) contrast(73%);
+  filter: brightness(0) saturate(100%) invert(10%) sepia(97%) saturate(5484%) hue-rotate(342deg) brightness(89%) contrast(96%);
 }
 .phone-icon{
   width:2rem;
