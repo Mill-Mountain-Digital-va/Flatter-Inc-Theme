@@ -929,10 +929,30 @@ margin-top: 0;
   font-weight: 700;
 }
 
+#accordion-1 .mill-mountain-tab-image {
+  width: 20rem;
+}
 
 /*--------------------------------------------------------------
 # Helpers
 --------------------------------------------------------------*/
+
+textarea{
+  color: gray;
+  border: 1px solid black;
+  border-radius: .4rem;
+  height: 5rem;
+  width: 18rem;
+
+}
+#input-item {
+  color: gray;
+  border: 1px solid black;
+  border-radius: .4rem;
+  height: 2rem;
+  width: 18rem;
+}
+
 .social-bar {
   display: flex;
   flex-flow: row nowrap;
