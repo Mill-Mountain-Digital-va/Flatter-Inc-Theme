@@ -7,6 +7,7 @@ const children = document.querySelectorAll('.sub-menu');
 let mobilemenu = document.querySelector('.mobile-menu-icon');
 const pageItems = document.querySelectorAll('.menu-item');
 const buttons = document.querySelectorAll('button');
+const submitButtons = document.querySelectorAll('input[type="submit"]');
 let searchbar = document.querySelector("#wp-block-search__input-1");
 let searchButton = document.querySelector(".wp-block-search__button ");
 const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
@@ -21,6 +22,13 @@ mainMenu.setAttribute("class", "menu");
 
 
 buttons.forEach(item => {
+    item.addEventListener('click', (e) => {
+        item.classList.add('button-animation');
+    })
+})
+
+
+submitButtons.forEach(item => {
     item.addEventListener('click', (e) => {
         item.classList.add('button-animation');
     })
