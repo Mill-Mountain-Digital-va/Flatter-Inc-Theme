@@ -12,8 +12,13 @@ let searchbar = document.querySelector("#wp-block-search__input-1");
 let searchButton = document.querySelector(".wp-block-search__button ");
 const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
 const accordionSub = document.querySelectorAll(".accordion-sub-container");
+const accordionParents = document.querySelectorAll(".wp-block-millmountain-accordion");
 const mainMenu = document.querySelector(".menu-menu-container");
 let customLogo = document.querySelector(".custom-logo-link");
+
+function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
 
 
 customLogo.setAttribute("href", "/");
@@ -86,25 +91,32 @@ pageItems.forEach(item => {
     })
 })
 
+
+accordionParents.forEach((item,index) => {
+    let rightArrow = document.createElement('div');
+    rightArrow.setAttribute('class', `right-arrow-${index}`);
+    let leftArrow = document.createElement('div');
+    leftArrow.setAttribute('class', `left-arrow-${index}`);
+
+    item.insertBefore(leftArrow,`accordion-${index}` );
+    item.insertAfter(rightArrow,`accordion-${index}` );
+
+}); 
 accordionSub.forEach((item,index) =>{
+
     item.setAttribute("class", "accordion-event-target");
     item.setAttribute("id", `accordion-${index}`);
-
     
 });
 
 accordions.forEach((item , index) =>{
-    let rightArrow = document.createElement('div');
-    rightArrow.setAttribute('class', 'right-arrow');
-    let leftArrow = document.createElement('div');
-    leftArrow.setAttribute('class', 'left-arrow');
+   
     item.addEventListener('click', (event) => {
         let toggleAccordion = accordionSub[index];
         toggleAccordion.classList.toggle('u-none'); 
     })
 
-    item.insertBefore(rightArrow);
-    item.insertAfter(leftArrow);
+ 
 })
 
 
