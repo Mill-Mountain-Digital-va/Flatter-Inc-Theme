@@ -15,6 +15,7 @@ const accordionSub = document.querySelectorAll(".accordion-sub-container");
 const mainMenu = document.querySelector(".menu-menu-container");
 let customLogo = document.querySelector(".custom-logo-link");
 
+
 customLogo.setAttribute("href", "/");
 
 
@@ -33,6 +34,8 @@ submitButtons.forEach(item => {
         item.classList.add('button-animation');
     })
 })
+
+
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
@@ -91,11 +94,17 @@ accordionSub.forEach((item,index) =>{
 });
 
 accordions.forEach((item , index) =>{
-    
+    let rightArrow = document.createElement('div');
+    rightArrow.setAttribute('class', 'right-arrow');
+    let leftArrow = document.createElement('div');
+    leftArrow.setAttribute('class', 'left-arrow');
     item.addEventListener('click', (event) => {
         let toggleAccordion = accordionSub[index];
         toggleAccordion.classList.toggle('u-none'); 
     })
+
+    item.insertBefore(rightArrow,item);
+    item.insertAfter(leftArrow,item);
 })
 
 
