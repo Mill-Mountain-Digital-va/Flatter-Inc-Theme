@@ -103,8 +103,8 @@ accordions.forEach((item , index) =>{
         toggleAccordion.classList.toggle('u-none'); 
     })
 
-    item.insertBefore(rightArrow,item);
-    item.insertAfter(leftArrow,item);
+    item.insertBefore(rightArrow);
+    item.insertAfter(leftArrow);
 })
 
 
