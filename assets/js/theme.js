@@ -100,7 +100,9 @@ accordionParents.forEach((item,index) => {
 
 
     item.insertBefore(leftArrow, accordionSub[index]);
-    item.insertAfter(rightArrow, accordionSub[index]);
+    // item.insertAfter(rightArrow, accordionSub[index]);
+
+    accordionSub[index].appendChild(rightArrow);
 
 }); 
 accordionSub.forEach((item,index) =>{
