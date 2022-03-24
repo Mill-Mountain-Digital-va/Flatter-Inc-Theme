@@ -97,7 +97,7 @@ accordionParents.forEach((item,index) => {
     rightArrow.setAttribute('class', `right-arrow-${index}`);
     let leftArrow = document.createElement('div');
     leftArrow.setAttribute('class', `left-arrow-${index}`);
-    let innerTarget = document.getElementsByClassName(`accordion-${index}`);
+    let innerTarget = document.getElementsByClassName('accordion-sub-container');
 
     item.insertBefore(leftArrow, innerTarget );
     item.insertAfter(rightArrow, innerTarget);
