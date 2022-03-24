@@ -102,7 +102,7 @@ accordionParents.forEach((item,index) => {
     item.insertBefore(leftArrow, accordionSub[index]);
     // item.insertAfter(rightArrow, accordionSub[index]);
 
-    accordionSub[index].appendChild(rightArrow);
+   item.appendChild(rightArrow);
 
 }); 
 accordionSub.forEach((item,index) =>{
