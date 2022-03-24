@@ -97,9 +97,10 @@ accordionParents.forEach((item,index) => {
     rightArrow.setAttribute('class', `right-arrow-${index}`);
     let leftArrow = document.createElement('div');
     leftArrow.setAttribute('class', `left-arrow-${index}`);
+    let innerTarget = document.getElementsByClassName(`accordion-${index}`);
 
-    item.insertBefore(leftArrow,`accordion-${index}` );
-    item.insertAfter(rightArrow,`accordion-${index}` );
+    item.insertBefore(leftArrow, innerTarget );
+    item.insertAfter(rightArrow, innerTarget);
 
 }); 
 accordionSub.forEach((item,index) =>{
