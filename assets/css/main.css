@@ -753,16 +753,16 @@ header {
   position: absolute;
   z-index: 1000;
   left: 0;
-  bottom: 49rem;
-  opacity: .5;
+  bottom: 40%;
+  opacity: .7;
 }
 .right {
   width: 9rem;
   position: absolute;
   z-index: 1000;
   right: 0;
-  bottom: 49rem;
-  opacity: .5;
+  bottom: 40%;
+  opacity: .7;
 }
 
 .accordion-two{
