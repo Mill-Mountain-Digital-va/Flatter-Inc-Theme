@@ -105,6 +105,8 @@ accordionParents.forEach((item,index) => {
         accordionSub[index].scrollBy(400,0);
        accordionIndex++;
        console.log(accordionIndex);
+       console.log(accordionSub[index].scrollWidth);
+       console.log(e.offsetX);
     });
     let leftArrow = document.createElement('div');
     leftArrow.setAttribute('class', `left-arrow-${index} left`);
@@ -113,6 +115,9 @@ accordionParents.forEach((item,index) => {
         accordionSub[index].scrollBy(-400,0);
         accordionIndex--;
         console.log(accordionIndex);
+        console.log(accordionSub[index].scrollWidth);
+        console.log(e.offsetX);
+
        
     
        
