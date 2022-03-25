@@ -108,6 +108,7 @@ accordionParents.forEach((item,index) => {
 
         } else {
             leftArrow.classList.remove('u-none');
+            rightArrow.classList.remove('u-none');
         }
      
     })
