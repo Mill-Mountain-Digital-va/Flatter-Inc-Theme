@@ -96,6 +96,14 @@ accordionParents.forEach((item,index) => {
     let scrollWidth = accordionSub[index].screenX;
     let accordionIndex = 0
 
+    item.addEventListener("onscroll", (e) => {
+        console.log(e.screenX);
+        console.log(e.scrollWidth);
+        console.log(e.offsetX);
+        console.log(item.getBoundingClientRect().right);
+        console.log(item.getBoundingClientRect().left);
+    })
+
     let numTabs = scrollWidth - 20 /400;
     let rightArrow = document.createElement('div');
     rightArrow.setAttribute('class', `right-arrow-${index} right`);
@@ -107,7 +115,9 @@ accordionParents.forEach((item,index) => {
        console.log(accordionIndex);
        console.log(accordionSub[index].scrollWidth);
        console.log(e.offsetX);
+     
     });
+
     let leftArrow = document.createElement('div');
     leftArrow.setAttribute('class', `left-arrow-${index} left`);
     leftArrow.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM288 360c0 9.531-5.656 18.19-14.41 22C270.5 383.3 267.3 384 264 384c-5.938 0-11.81-2.219-16.34-6.406l-112-104C130.8 269 128 262.7 128 256s2.781-13.03 7.656-17.59l112-104c7.031-6.469 17.22-8.156 25.94-4.406C282.3 133.8 288 142.5 288 152V360z"/></svg>';
@@ -117,6 +127,7 @@ accordionParents.forEach((item,index) => {
         console.log(accordionIndex);
         console.log(accordionSub[index].scrollWidth);
         console.log(e.offsetX);
+        
 
        
     
