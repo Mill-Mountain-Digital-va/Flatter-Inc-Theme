@@ -96,8 +96,9 @@ accordionParents.forEach((item,index) => {
     let scrollWidth = accordionSub[index].screenX;
     let accordionIndex = 0
 
-    item.addEventListener("onscroll", (e) => {
+    item.addEventListener("scroll", (e) => {
         console.log(e.screenX);
+        console.log(e.scrollX);
         console.log(e.scrollWidth);
         console.log(e.offsetX);
         console.log(item.getBoundingClientRect().right);
