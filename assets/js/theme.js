@@ -104,6 +104,7 @@ accordionParents.forEach((item,index) => {
         
         accordionSub[index].scrollBy(400,0);
        accordionIndex++;
+       console.log(accordionIndex);
     });
     let leftArrow = document.createElement('div');
     leftArrow.setAttribute('class', `left-arrow-${index} left`);
@@ -111,6 +112,7 @@ accordionParents.forEach((item,index) => {
     leftArrow.addEventListener('click', (e) => {
         accordionSub[index].scrollBy(-400,0);
         accordionIndex--;
+        console.log(accordionIndex);
        
     
        
