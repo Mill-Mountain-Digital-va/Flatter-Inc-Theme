@@ -20,27 +20,21 @@ function insertAfter(referenceNode, newNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 }
 
-
 customLogo.setAttribute("href", "/");
 
-
 mainMenu.setAttribute("class", "menu");
-
 
 buttons.forEach(item => {
     item.addEventListener('click', (e) => {
         item.classList.add('button-animation');
-    })
-})
-
+    });
+});
 
 submitButtons.forEach(item => {
     item.addEventListener('click', (e) => {
         item.classList.add('button-animation');
-    })
-})
-
-
+    });
+});
 
 children.forEach(item => {
     item.setAttribute("tabindex", "0");
@@ -49,9 +43,9 @@ children.forEach(item => {
         desktop.classList.toggle('open');
         hambutton.classList.toggle('spin');
 
-    })
+    });
    
-})
+});
 
 withChild.forEach(item => {
     let caret = document.createElement('i');
@@ -62,24 +56,21 @@ withChild.forEach(item => {
 
         target.classList.toggle('blink');
 
-    })
+    });
 
-})
+});
 
 pageItems.forEach(item => {
     item.addEventListener("click", (e) => {
       
        newItem = e.target.closest(".menu-item");
     
-      
         if (newItem.classList != "blink" ){
+
             newItem.classList.toggle('blink');
             desktop.classList.toggle('open');
             hambutton.classList.toggle('spin');
             
-         
-
-
         }
         else if (newItem.classList == "blink"){
             newItem.classList.remove("blink");
@@ -88,24 +79,24 @@ pageItems.forEach(item => {
         hambutton.classList.toggle('spin');
          
         }
-    })
-})
+    });
+});
 
 
 accordionParents.forEach((item,index) => {
    
 
     accordionSub[index].addEventListener("scroll", (e) => {
-        console.log(accordionSub[index].scrollLeft);
-        console.log(accordionSub[index].offsetWidth);
-        console.log(accordionSub[index].scrollWidth);
-
       
-        let scrollIndex = accordionSub[index].scrollLeft;   
+        let scrollIndex = accordionSub[index].scrollLeft;
+           
         if(scrollIndex <= 0){
+
             rightArrow.classList.remove('u-none');
             leftArrow.classList.add('u-none');
+
         } else if(scrollIndex >= accordionSub[index].scrollWidth - accordionSub[index].offsetWidth){
+
             leftArrow.classList.remove('u-none');
             rightArrow.classList.add('u-none');
 
@@ -114,19 +105,14 @@ accordionParents.forEach((item,index) => {
             rightArrow.classList.remove('u-none');
         }
      
-    })
+    });
 
-   
     let rightArrow = document.createElement('div');
     rightArrow.setAttribute('class', `right-arrow-${index} right`);
     rightArrow.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM312.3 273.6l-112 104C195.8 381.8 189.9 384 184 384c-3.25 0-6.5-.6562-9.594-2C165.7 378.2 160 369.5 160 360v-208c0-9.531 5.656-18.19 14.41-22c8.75-3.75 18.94-2.062 25.94 4.406l112 104C317.2 242.1 320 249.3 320 256S317.2 269 312.3 273.6z"/></svg>';
     rightArrow.addEventListener('click', (e) => {
         
         accordionSub[index].scrollBy(400,0);
-       accordionIndex++;
-       console.log(accordionIndex);
-       console.log(accordionSub[index].scrollWidth);
-       console.log(e.offsetX);
      
     });
 
@@ -134,27 +120,14 @@ accordionParents.forEach((item,index) => {
     leftArrow.setAttribute('class', `left-arrow-${index} left u-none`);
     leftArrow.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 32H64C28.65 32 0 60.65 0 96v320c0 35.34 28.65 64 64 64h320c35.35 0 64-28.66 64-64V96C448 60.65 419.3 32 384 32zM288 360c0 9.531-5.656 18.19-14.41 22C270.5 383.3 267.3 384 264 384c-5.938 0-11.81-2.219-16.34-6.406l-112-104C130.8 269 128 262.7 128 256s2.781-13.03 7.656-17.59l112-104c7.031-6.469 17.22-8.156 25.94-4.406C282.3 133.8 288 142.5 288 152V360z"/></svg>';
     leftArrow.addEventListener('click', (e) => {
-        accordionSub[index].scrollBy(-400,0);
-        accordionIndex--;
-        console.log(accordionIndex);
-        console.log(accordionSub[index].scrollWidth);
-        console.log(e.offsetX);
-        
 
-       
+        accordionSub[index].scrollBy(-400,0);  
     
-       
     });
-
-
-    
-    
-  
 
     item.insertBefore(leftArrow, accordionSub[index]);
     // item.insertAfter(rightArrow, accordionSub[index]);
-
-   item.appendChild(rightArrow);
+    item.appendChild(rightArrow);
 
 }); 
 accordionSub.forEach((item,index) =>{
@@ -169,19 +142,14 @@ accordions.forEach((item , index) =>{
     item.addEventListener('click', (event) => {
         let toggleAccordion = accordionSub[index];
         toggleAccordion.classList.toggle('u-none'); 
-    })
-
+    });
  
-})
-
+});
 
 hambutton.addEventListener('click', (e) => {
     desktop.classList.toggle('open');
     hambutton.classList.toggle('spin');
-})
-
-
-
+});
 
 //Search bar text
 searchbar.setAttribute('placeholder', 'What can we help you with?');
