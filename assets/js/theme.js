@@ -99,7 +99,7 @@ accordionParents.forEach((item,index) => {
     rightArrow.addEventListener('click', (e) => {
         
         accordionSub[index].scrollBy(400,0);
-        console.log(accordionSub[index].screenX);
+        console.log(accordionSub[index].scrollWidth);
     });
     let leftArrow = document.createElement('div');
     leftArrow.setAttribute('class', `left-arrow-${index} left`);
@@ -107,7 +107,7 @@ accordionParents.forEach((item,index) => {
     leftArrow.addEventListener('click', (e) => {
         accordionSub[index].scrollBy(-400,0);
         if(e.screenX )
-        console.log(accordionSub[index].screenX);
+        console.log(accordionSub[index].scrollWidth);
        
     });
 
