@@ -95,14 +95,17 @@ pageItems.forEach(item => {
 accordionParents.forEach((item,index) => {
    
 
-    accordionSub[index].addEventListener("scroll", (e) => {
+    accordionSub[index].addEventListener("scroll", (e) => {\
+        console.log(accordionSub[index].scrollLeft);
+        console.log(accordionSub[index].offsetWidth);
+        console.log(accordionSub[index].scrollWidth);
 
       
         let scrollIndex = accordionSub[index].scrollLeft;   
         if(scrollIndex === 0){
             rightArrow.classList.remove('u-none');
             leftArrow.classList.add('u-none');
-        } else if( accordionSub[index].scrollWidth - accordionSub[index].offsetWidth + 30){
+        } else if(scrollIndex >= accordionSub[index].scrollLeftMax - 80 || accordionSub[index].scrollWidth - accordionSub[index].offsetWidth){
             leftArrow.classList.remove('u-none');
             rightArrow.classList.add('u-none');
 
