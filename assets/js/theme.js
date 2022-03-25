@@ -102,7 +102,7 @@ accordionParents.forEach((item,index) => {
         if(scrollIndex === 0){
             rightArrow.classList.remove('u-none');
             leftArrow.classList.add('u-none');
-        } else if(scrollIndex >= accordionSub[index].scrollLeftMax - 80 || accordionSub[index].scrollWidth - accordionSub[index].offsetWidth - 20){
+        } else if(scrollIndex >= accordionSub[index].scrollLeftMax - 80 || accordionSub[index].scrollWidth - accordionSub[index].offsetWidth){
             leftArrow.classList.remove('u-none');
             rightArrow.classList.add('u-none');
 
