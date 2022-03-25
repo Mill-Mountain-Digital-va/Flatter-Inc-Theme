@@ -95,7 +95,7 @@ pageItems.forEach(item => {
 accordionParents.forEach((item,index) => {
    
 
-    accordionSub[index].addEventListener("scroll", (e) => {\
+    accordionSub[index].addEventListener("scroll", (e) => {
         console.log(accordionSub[index].scrollLeft);
         console.log(accordionSub[index].offsetWidth);
         console.log(accordionSub[index].scrollWidth);
