@@ -97,7 +97,7 @@ accordionParents.forEach((item,index) => {
     let accordionIndex = 0
 
     accordionSub[index].addEventListener("scroll", (e) => {
-        console.log(accordionSub[index].scrollTo);
+        console.log(accordionSub[index].scrollTo(accordionSub[index].getBoundingClientRect().left));
         console.log(item.getBoundingClientRect().right);
         console.log(item.getBoundingClientRect().left);
     })
