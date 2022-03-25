@@ -134,17 +134,7 @@ accordionParents.forEach((item,index) => {
        
     });
 
-    if(accordionIndex === 0) {
-        leftArrow.classList.add('u-none');
-        rightArrow.classList.remove('u-none');
-    } else if (accordionIndex === numTabs){
-        rightArrow.classList.add('u-none');
-        leftArrow.classList.remove('u-none');
 
-    } else{
-        rightArrow.classList.remove('u-none');
-        leftArrow.classList.remove('u-none');
-    }
     
     
   
