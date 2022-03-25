@@ -99,8 +99,8 @@ accordionParents.forEach((item,index) => {
     accordionSub[index].addEventListener("scroll", (e) => {
         console.log(item.clientWidth);
         console.log(accordionSub[index].clientWidth);
-        console.log(item.getBoundingClientRect().right);
-        console.log(item.getBoundingClientRect().left);
+        console.log(accordionSub[index].getBoundingClientRect().right);
+        console.log(accordionSub[index].getBoundingClientRect().left);
     })
 
     let numTabs = scrollWidth - 20 /400;
