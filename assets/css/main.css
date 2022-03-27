@@ -235,14 +235,12 @@ html {
 }
 @keyframes tabslidedown {
   from {
-    position: relative;
-    top: -7rem;
-    opacity: .2;
+   height:0%;
+   opacity:.5;
   }
   to {
-    position: relative;
-    top: 0;
     opacity: 1;
+    height:100%;
   }
 }
 @keyframes newblink {
