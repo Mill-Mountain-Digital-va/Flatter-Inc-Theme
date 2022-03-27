@@ -25,14 +25,14 @@ dropDownButtons.forEach((item, index) => {
         hiddenContentArray[index].classList.toggle('u-none');
         hiddenContentArray[index].classList.toggle('slidedown');
         item.classList.toggle('rotate');
-    })
+    });
 
     if(item.outerText){
-        dropdownTextArray[index].addEventListener('click', (e) => {
+        item.closest(dropdownTextArray).addEventListener('click', (e) => {
         hiddenContentArray[index].classList.toggle('u-none');
         hiddenContentArray[index].classList.toggle('slidedown');
         item.classList.toggle('rotate');
-    })
+    });
     };
 })
 
