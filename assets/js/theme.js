@@ -16,11 +16,12 @@ const accordionParents = document.querySelectorAll(".wp-block-millmountain-accor
 const mainMenu = document.querySelector(".menu-menu-container");
 let customLogo = document.querySelector(".custom-logo-link");
 const dropDownButtons = document.querySelectorAll(".dropdown-button");
+const hiddenContentArray = document.querySelectorAll(".mill-mountain-tab-hidden-content");
 
 
-dropDownButtons.forEach(item => {
+dropDownButtons.forEach((item, index) => {
     item.addEventListener('click', (e) => {
-        console.log('derp');
+        hiddenContentArray[index].classList.toggle('u-none');
     })
 })
 
