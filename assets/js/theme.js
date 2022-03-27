@@ -17,6 +17,7 @@ const mainMenu = document.querySelector(".menu-menu-container");
 let customLogo = document.querySelector(".custom-logo-link");
 const dropDownButtons = document.querySelectorAll(".dropdown-button");
 const hiddenContentArray = document.querySelectorAll(".mill-mountain-tab-hidden-content");
+const dropdownTextArray = document.querySelectorAll('.mill-mountain-tab-button p');
 
 
 dropDownButtons.forEach((item, index) => {
@@ -25,7 +26,17 @@ dropDownButtons.forEach((item, index) => {
         hiddenContentArray[index].classList.toggle('slidedown');
         item.classList.toggle('rotate');
     })
+
+    if(item.outerText){
+        dropdownTextArray[index].addEventListener('click', (e) => {
+        hiddenContentArray[index].classList.toggle('u-none');
+        hiddenContentArray[index].classList.toggle('slidedown');
+        item.classList.toggle('rotate');
+    })
+    };
 })
+
+
 
 
 
