@@ -21,7 +21,8 @@ const hiddenContentArray = document.querySelectorAll(".mill-mountain-tab-hidden-
 
 dropDownButtons.forEach((item, index) => {
     item.addEventListener('click', (e) => {
-        hiddenContentArray[index].classList.toggle('u-none slidedown');
+        hiddenContentArray[index].classList.toggle('u-none');
+        hiddenContentArray[index].classList.toggle('slidedown');
     })
 })
 
