@@ -988,6 +988,9 @@ textarea{
   display: none;
 
 }
+.slidedown{
+  animation: slidedown 0.75s;
+}
 
 .phone-bar {
   display: flex;
