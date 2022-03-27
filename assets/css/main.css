@@ -1001,7 +1001,7 @@ textarea{
 
 }
 .slidedown{
-  animation: tabslidedown 1s;
+  animation: tabslidedown 2s;
   padding-left:1rem;
   border-left: 1px solid !important;
   overflow: hidden;
