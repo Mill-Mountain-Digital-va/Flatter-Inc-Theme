@@ -30,8 +30,8 @@ dropDownButtons.forEach((item, index) => {
     if(item.outerText){
         item.nextElementSibling.addEventListener('click', (e) => {
 
-            e.target.closest('.mill-mountain-tab-hidden-content').classList.toggle('u-none');
-            e.target.closest('.mill-mountain-tab-hidden-content').toggle('slidedown');
+            e.target.closest('p').classList.toggle('u-none');
+            e.target.closest('p').toggle('slidedown');
             item.classList.toggle('rotate');
         });
        
