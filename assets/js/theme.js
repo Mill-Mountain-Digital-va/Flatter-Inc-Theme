@@ -28,7 +28,11 @@ dropDownButtons.forEach((item, index) => {
     });
     
     if(item.outerText){
-        
+        item.nextElementSibling.addEventListener('click', (e) => {
+            hiddenContentArray[index].classList.toggle('u-none');
+            hiddenContentArray[index].classList.toggle('slidedown');
+            item.classList.toggle('rotate');
+        });
        
     };
 })
