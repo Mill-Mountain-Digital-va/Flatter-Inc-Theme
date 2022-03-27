@@ -236,13 +236,13 @@ html {
 @keyframes tabslidedown {
   from {
    height:0%;
-  opacity: .7;
-   top:-5rem;
+  opacity: .4;
+  
   }
   to {
     opacity: 1;
     height:100%;
-    top:0;
+
   }
 }
 @keyframes newblink {
@@ -1001,10 +1001,10 @@ textarea{
 
 }
 .slidedown{
-  animation: tabslidedown 1.5s;
+  animation: tabslidedown 1s;
   padding-left:1rem;
-  border-left: 1px inherit solid;
-  position: relative;
+  border-left: 1px solid !important;
+  overflow: hidden;
   
 }
 .rotate{
