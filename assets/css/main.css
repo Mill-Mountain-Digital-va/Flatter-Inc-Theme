@@ -1002,6 +1002,7 @@ textarea{
 }
 .slidedown{
   animation: tabslidedown 0.2s;
+  padding-left:1rem;
 }
 .rotate{
   transform: rotate(0.5turn);
