@@ -18,6 +18,7 @@ let customLogo = document.querySelector(".custom-logo-link");
 const dropDownButtons = document.querySelectorAll(".dropdown-button");
 const hiddenContentArray = document.querySelectorAll(".mill-mountain-tab-hidden-content");
 const dropdownTextArray = document.querySelectorAll('.mill-mountain-tab-button p');
+const dropdownTextWithButton = dropdownTextArray.map((element) => element.previousElementSibling.classList === "dropdown-button" );
 
 
 dropDownButtons.forEach((item, index) => {
