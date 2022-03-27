@@ -1007,6 +1007,7 @@ textarea{
   border-left: 1px solid !important;
   overflow: hidden;
   border-radius:0;
+  border-color:inherit;
   
 }
 .rotate{
