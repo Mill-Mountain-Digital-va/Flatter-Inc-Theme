@@ -991,6 +991,10 @@ textarea{
 .slidedown{
   animation: slidedown 0.75s;
 }
+.rotate{
+  transform: rotate(0.5turn);
+  transition: .5s;
+}
 
 .phone-bar {
   display: flex;
