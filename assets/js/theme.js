@@ -10,15 +10,21 @@ const buttons = document.querySelectorAll('button');
 const submitButtons = document.querySelectorAll('input[type="submit"]');
 let searchbar = document.querySelector("#wp-block-search__input-1");
 let searchButton = document.querySelector(".wp-block-search__button ");
-const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
+// const accordions = document.querySelectorAll(".mill-mountain-accordion-button");
 const accordionSub = document.querySelectorAll(".accordion-sub-container");
 const accordionParents = document.querySelectorAll(".wp-block-millmountain-accordion");
 const mainMenu = document.querySelector(".menu-menu-container");
 let customLogo = document.querySelector(".custom-logo-link");
+const dropDownButtons = document.querySelectorAll(".dropdown-button");
 
-function insertAfter(referenceNode, newNode) {
-    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-}
+
+dropDownButtons.forEach(item => {
+    item.addEventListener('click', (e) => {
+        console.log('derp');
+    })
+})
+
+
 
 customLogo.setAttribute("href", "/");
 
@@ -137,14 +143,14 @@ accordionSub.forEach((item,index) =>{
     
 });
 
-accordions.forEach((item , index) =>{
+// accordions.forEach((item , index) =>{
    
-    item.addEventListener('click', (event) => {
-        let toggleAccordion = accordionSub[index];
-        toggleAccordion.classList.toggle('u-none'); 
-    });
+//     item.addEventListener('click', (event) => {
+//         let toggleAccordion = accordionSub[index];
+//         toggleAccordion.classList.toggle('u-none'); 
+//     });
  
-});
+// });
 
 hambutton.addEventListener('click', (e) => {
     desktop.classList.toggle('open');
