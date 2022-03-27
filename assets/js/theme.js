@@ -28,9 +28,10 @@ dropDownButtons.forEach((item, index) => {
     });
 
     if(item.outerText){
-        item.closest(dropdownTextArray).addEventListener('click', (e) => {
-        hiddenContentArray[index].classList.toggle('u-none');
-        hiddenContentArray[index].classList.toggle('slidedown');
+        dropdownTextArray[index].addEventListener('click', (e) => {
+        const targetContent =  e.target.closest(hiddenContentArray);
+        targetContent.classList.toggle('u-none');
+        targetContent.classList.toggle('slidedown');
         item.classList.toggle('rotate');
     });
     };
