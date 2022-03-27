@@ -20,8 +20,9 @@ const hiddenContentArray = document.querySelectorAll(".mill-mountain-tab-hidden-
 const dropdownTextArray = document.querySelectorAll('.mill-mountain-tab-button p');
 const dropdownTextWithButton = dropdownTextArray.filter(element => {
     let previous = element.previousElementSibling;
-    previous.classList == "dropdown-button";
 } );
+
+
 
 
 dropDownButtons.forEach((item, index) => {
@@ -31,13 +32,13 @@ dropDownButtons.forEach((item, index) => {
         item.classList.toggle('rotate');
     });
 
-    if(item.outerText){
-        dropdownTextArray[index].addEventListener('click', (e) => {
-        const targetContent =  e.target.closest(hiddenContentArray['p']);
-        targetContent.classList.toggle('u-none');
-        targetContent.classList.toggle('slidedown');
-        item.classList.toggle('rotate');
-    });
+    // if(item.outerText){
+    //     dropdownTextArray[index].addEventListener('click', (e) => {
+    //     const targetContent =  e.target.closest(hiddenContentArray['p']);
+    //     targetContent.classList.toggle('u-none');
+    //     targetContent.classList.toggle('slidedown');
+    //     item.classList.toggle('rotate');
+    // });
     };
 })
 
