@@ -21,15 +21,16 @@ const dropdownTextArray = document.querySelectorAll('.mill-mountain-tab-button p
 const dropdownTextWithButton = "";
 
 dropDownButtons.forEach((item, index) => {
+    let newTarget = item.parentElement.previousElementSibling;
     item.addEventListener('click', (e) => {
-        hiddenContentArray[index].classList.toggle('u-none');
-        hiddenContentArray[index].classList.toggle('slidedown');
+        newTarget.classList.toggle('u-none');
+        newTarget.classList.toggle('slidedown');
         item.classList.toggle('rotate');
     });
     
     if(item.outerText){
         item.nextElementSibling.addEventListener('click', (e) => {
-            let newTarget = item.parentElement.previousElementSibling;
+           
             console.log(newTarget);
             console.log(item);
             console.log(this);
