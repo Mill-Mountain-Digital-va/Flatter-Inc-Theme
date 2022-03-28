@@ -29,7 +29,7 @@ dropDownButtons.forEach((item, index) => {
     
     if(item.outerText){
         item.nextElementSibling.addEventListener('click', (e) => {
-            let newTarget = item.parentElement;
+            let newTarget = item.parentElement.previousElementSibling;
             console.log(newTarget);
             console.log(item);
             console.log(this);
