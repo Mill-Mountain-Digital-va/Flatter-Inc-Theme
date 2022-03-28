@@ -30,8 +30,8 @@ dropDownButtons.forEach((item, index) => {
     if(item.outerText){
         item.nextElementSibling.addEventListener('click', (e) => {
             let newTarget = Array.from(hiddenContentArray);
-           e.target.closest(`div < div`).classList.toggle('u-none');
-           e.target.closest(`div < div`).classList.toggle('slidedown');
+           e.target.closest("div > div").classList.toggle('u-none');
+           e.target.closest("div > div").classList.toggle('slidedown');
             item.classList.toggle('rotate');
         });
        
