@@ -31,6 +31,8 @@ dropDownButtons.forEach((item, index) => {
         item.nextElementSibling.addEventListener('click', (e) => {
             let newTarget = e.target;
             console.log(newTarget);
+            console.log(item);
+            console.log(this);
            newTarget.classList.toggle('u-none');
            newTarget.classList.toggle('slidedown');
             item.classList.toggle('rotate');
