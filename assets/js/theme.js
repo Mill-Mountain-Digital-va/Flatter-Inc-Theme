@@ -258,7 +258,7 @@ mobilemenu.addEventListener("keydown", e => {
         resultEl.innerHTML= newNum;
        }
        
-    let resultMain = document.querySelector('.millmountain-c-calculator-submit');
+    let resultMain = document.querySelector('.millmountain-c-calculator-results');
     resultMain.addEventListener('click', (e)=> {
         let x = document.querySelector('.millmountain-c-calculator-number-x').value;
         let y = document.querySelector('.millmountain-c-calculator-number-y').value;
