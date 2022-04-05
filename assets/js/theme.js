@@ -176,7 +176,7 @@ submitCalc.forEach(item => {
     item.addEventListener('click', (e)=> {
    
     
-        let resultMain = e.target.closest('.millmountain-c-calculator-result');
+        let resultMain = e.target.closest('div.millmountain-c-calculator-result');
           let x = document.querySelector('.millmountain-c-calculator-number-x').value;
           let y = document.querySelector('.millmountain-c-calculator-number-y').value;
          let newResult = mathAdd(x, y);
