@@ -249,6 +249,23 @@ mobilemenu.addEventListener("keydown", e => {
         }
 
     }
+// CALCULATOR BLOCK LOGIC
+
+    function mathAdd(calculatorY, calculatorX ) {
+        let newNum = calculatorX + calculatorY;
+        return newNum;
+        let resultEl = document.querySelector('.result');
+        resultEl.innerHTML= newNum;
+       }
+       
+    let resultMain = document.querySelector('.submit');
+    resultMain.addEventListener('click', (e)=> {
+        let x = document.querySelector('.millmountain-c-calculator-number-x').value;
+        let y = document.querySelector('.millmountain-c-calculator-number-y').value;
+       let newResult = doingMath(x, y);
+       resultMain.innerHTML= newResult;
+    });
+
 
     // if (withChild === document.activeElement) {
 
