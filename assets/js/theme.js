@@ -252,10 +252,8 @@ mobilemenu.addEventListener("keydown", e => {
 // CALCULATOR BLOCK LOGIC
 
     function mathAdd(calculatorY, calculatorX ) {
-        let newNum = calculatorX + calculatorY;
+        let newNum = parseInt(calculatorX)+ parseInt(calculatorY);
         return newNum;
-        let resultEl = document.querySelector('.result');
-        resultEl.innerHTML= newNum;
        }
        
     let submitCalc = document.querySelector('.millmountain-c-calculator-submit');
