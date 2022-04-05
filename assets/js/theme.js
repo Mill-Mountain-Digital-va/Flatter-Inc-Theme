@@ -262,7 +262,7 @@ mobilemenu.addEventListener("keydown", e => {
     resultMain.addEventListener('click', (e)=> {
         let x = document.querySelector('.millmountain-c-calculator-number-x').value;
         let y = document.querySelector('.millmountain-c-calculator-number-y').value;
-       let newResult = doingMath(x, y);
+       let newResult = mathAdd(x, y);
        resultMain.innerHTML= newResult;
     });
 
