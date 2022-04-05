@@ -256,18 +256,21 @@ mobilemenu.addEventListener("keydown", e => {
         return newNum;
        }
        
-    let submitCalc = document.querySelector('.millmountain-c-calculator-submit');
-    submitCalc.addEventListener('click', (e)=> {
+    let submitCalc = document.querySelectorAll('.millmountain-c-calculator-submit');
+    submitCalc.forEach(item => { 
+        item.addEventListener('click', (e)=> {
        
         
-      let resultMain = e.target.closest('.millmountain-c-calculator-result');
-        let x = document.querySelector('.millmountain-c-calculator-number-x').value;
-        let y = document.querySelector('.millmountain-c-calculator-number-y').value;
-       let newResult = mathAdd(x, y);
-       console.log(newResult);
-       console.log(resultMain);
-       resultMain.innerHTML= newResult;
-    });
+            let resultMain = e.target.closest('.millmountain-c-calculator-result');
+              let x = document.querySelector('.millmountain-c-calculator-number-x').value;
+              let y = document.querySelector('.millmountain-c-calculator-number-y').value;
+             let newResult = mathAdd(x, y);
+             console.log(newResult);
+             console.log(resultMain);
+             resultMain.innerHTML= newResult;
+          });
+    }); 
+    
 
 
     // if (withChild === document.activeElement) {
