@@ -161,7 +161,31 @@ accordionSub.forEach((item,index) =>{
     item.setAttribute("class", "accordion-event-target");
     item.setAttribute("id", `accordion-${index}`);
     
+    
 });
+
+// CALCULATOR BLOCK LOGIC
+
+function mathAdd(calculatorY, calculatorX ) {
+    let newNum = parseInt(calculatorX)+ parseInt(calculatorY);
+    return newNum;
+   }
+   
+let submitCalc = document.querySelectorAll('.millmountain-c-calculator-submit');
+submitCalc.forEach(item => { 
+    item.addEventListener('click', (e)=> {
+   
+    
+        let resultMain = e.target.closest('.millmountain-c-calculator-result');
+          let x = document.querySelector('.millmountain-c-calculator-number-x').value;
+          let y = document.querySelector('.millmountain-c-calculator-number-y').value;
+         let newResult = mathAdd(x, y);
+         console.log(newResult);
+         console.log(resultMain);
+         resultMain.innerHTML= newResult;
+      });
+}); 
+
 
 // accordions.forEach((item , index) =>{
    
@@ -249,28 +273,7 @@ mobilemenu.addEventListener("keydown", e => {
         }
 
     }
-// CALCULATOR BLOCK LOGIC
 
-    function mathAdd(calculatorY, calculatorX ) {
-        let newNum = parseInt(calculatorX)+ parseInt(calculatorY);
-        return newNum;
-       }
-       
-    let submitCalc = document.querySelectorAll('.millmountain-c-calculator-submit');
-    submitCalc.forEach(item => { 
-        item.addEventListener('click', (e)=> {
-       
-        
-            let resultMain = e.target.closest('.millmountain-c-calculator-result');
-              let x = document.querySelector('.millmountain-c-calculator-number-x').value;
-              let y = document.querySelector('.millmountain-c-calculator-number-y').value;
-             let newResult = mathAdd(x, y);
-             console.log(newResult);
-             console.log(resultMain);
-             resultMain.innerHTML= newResult;
-          });
-    }); 
-    
 
 
     // if (withChild === document.activeElement) {
