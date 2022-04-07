@@ -156,7 +156,7 @@ accordionParents.forEach((item,index) => {
     rightArrow.addEventListener('click', (e) => {
         
         // accordionSub[index].scrollBy(400,0);
-        sideScroll(accordionSub[index], 'right', 100, 400, 10)
+        sideScroll(accordionSub[index], 'right', 100, 400, 3)
      
     });
 
@@ -166,7 +166,7 @@ accordionParents.forEach((item,index) => {
     leftArrow.addEventListener('click', (e) => {
         
         // accordionSub[index].scrollBy(-400,0);  
-        sideScroll(accordionSub[index], 'left', 100, 400, 10)
+        sideScroll(accordionSub[index], 'left', 100, 400, 3)
     
     });
 
