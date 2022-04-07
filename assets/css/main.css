@@ -333,8 +333,6 @@ button {
 * {
   font-family: var(--font-two);
   outline: 0;
-  transition: .2s;
-  transition-timing-function: ease;
 }
 
 /*--------------------------------------------------------------
