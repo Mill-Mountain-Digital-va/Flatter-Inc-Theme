@@ -334,6 +334,7 @@ button {
   font-family: var(--font-two);
   outline: 0;
   transition: .5s;
+  transition-timing-function: ease;
 }
 
 /*--------------------------------------------------------------
