@@ -1132,7 +1132,6 @@ img{
   .sub-menu li {
     background-color: var(--blue-one);
     display: block;
-    margin-left: 5rem;
     padding: 1rem;
     position: relative;
     text-decoration: none;
